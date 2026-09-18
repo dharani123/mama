@@ -67,6 +67,22 @@ npm run build
 npm link       # puts `mama` on your PATH
 ```
 
+### Debian / Ubuntu package
+
+Build a `.deb` from the repo (needs only `dpkg-deb` and `fakeroot`, both
+present on a stock Ubuntu):
+
+```bash
+./packaging/build-deb.sh
+sudo apt install ./build/mama_1.0.0-1_all.deb
+```
+
+This installs `mama` to `/usr/bin`, the program to `/usr/lib/mama`, and a man
+page — so `man mama` works. It depends on `nodejs (>= 18)`, which apt pulls in
+automatically, and recommends `fonts-telugu`.
+
+Remove it with `sudo apt remove mama`.
+
 ### Requirements
 
 - **Node.js 18 or newer** — that is the only requirement.

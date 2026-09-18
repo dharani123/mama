@@ -1,0 +1,5 @@
+mama (@VERSION@) noble; urgency=medium
+
+  * Initial release.
+
+ -- MAMA CLI contributors <mama@example.invalid>  Fri, 18 Sep 2026 10:00:00 +0530

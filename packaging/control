@@ -1,0 +1,24 @@
+Package: mama
+Version: @VERSION@
+Section: misc
+Priority: optional
+Architecture: all
+Depends: nodejs (>= 18)
+Recommends: fonts-telugu
+Installed-Size: @INSTALLED_SIZE@
+Maintainer: MAMA CLI contributors <mama@example.invalid>
+Homepage: https://github.com/OWNER/mama
+Description: Telugu-speaking terminal buddy
+ MAMA prints short, friendly, funny and motivational messages in Telugu and
+ Telugu-English, the way a friend sitting next to you would say them.
+ .
+ Run "mama" for a random piece of wisdom, or pick a mood: motivate, calm,
+ morning, night, code, git, roast, coffee or friday. It ships 176 original
+ messages.
+ .
+ MAMA is a humour utility. It never executes commands, modifies files or git
+ repositories, or makes network requests. A message may contain text such as
+ a git command, but that text is only ever printed.
+ .
+ A UTF-8 locale and a font with Telugu glyphs are needed for readable output;
+ the recommended fonts-telugu package provides one.

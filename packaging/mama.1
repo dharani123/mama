@@ -1,0 +1,120 @@
+.TH MAMA 1 "2026-09-18" "mama 1.0.0" "User Commands"
+.SH NAME
+mama \- your Telugu-speaking terminal buddy
+.SH SYNOPSIS
+.B mama
+.RI [ command ]
+.br
+.B mama
+.BR \-\-help | \-\-version
+.SH DESCRIPTION
+.B mama
+prints short, friendly Telugu and Telugu-English messages in your terminal.
+Sometimes you need debugging. Sometimes you need motivation. Sometimes you
+just need someone to say
+.RB \(lq "parledu mama" \(rq
+\(em it's alright, mate.
+.PP
+.RB ( groff
+does not render Telugu combining marks, so this page transliterates. The
+program itself prints proper Telugu.)
+.PP
+Run with no arguments,
+.B mama
+prints a random piece of general wisdom. Each command below draws from its
+own collection of messages, selected at random.
+.PP
+.B mama
+is a humour utility. It never executes commands, never modifies your files or
+git repositories, and never makes a network request. A message may
+.I contain
+text such as
+.RB \(lq "git commit \-m \[dq]mama said so\[dq]" \(rq,
+but that text is only ever printed.
+.SH COMMANDS
+.TP
+.B motivate
+Motivation: persistence, discipline, getting back up.
+.TP
+.B calm
+Slow down, breathe, one thing at a time.
+.TP
+.B morning
+A start-of-day nudge.
+.TP
+.B night
+Let the day go and rest.
+.TP
+.B code
+Developer wisdom, mostly with a grin.
+.TP
+.B git
+Git humour.
+.TP
+.B roast
+A playful roast of your code and terminal habits.
+.TP
+.B coffee
+Coffee wisdom.
+.TP
+.B friday
+Weekend mode. Works on any day of the week, deliberately.
+.SH OPTIONS
+.TP
+.BR \-h ", " \-\-help
+Show usage and exit.
+.TP
+.BR \-v ", " \-\-version
+Show the version and exit.
+.SH EXIT STATUS
+.TP
+.B 0
+A message was printed.
+.TP
+.B 1
+The command was not recognised, or an unexpected error occurred.
+.SH ENVIRONMENT
+.TP
+.B NO_COLOR
+If set, disable colour entirely. See
+.UR https://no-color.org
+.UE .
+.TP
+.B FORCE_COLOR
+If set to anything other than
+.BR 0 ,
+keep colour even when output is not a terminal.
+.TP
+.B MAMA_SEED
+An integer seed for message selection. The same seed always produces the
+same message, which is useful in tests and scripts.
+.TP
+.B MAMA_DEBUG
+If set, print real stack traces instead of a friendly apology.
+.SH NOTES
+.B mama
+speaks Telugu, so a UTF-8 locale and a font with Telugu glyphs are required
+for readable output. On Debian and Ubuntu, install
+.B fonts\-telugu
+if you see boxes instead of letters.
+.PP
+Colour is disabled automatically when standard output is not a terminal, so
+.RB \(lq "mama | cat" \(rq
+and
+.RB \(lq "mama > file" \(rq
+produce plain text.
+.SH EXAMPLES
+.TP
+.B mama
+Print a random piece of wisdom.
+.TP
+.B mama roast
+Print a playful roast.
+.TP
+.B MAMA_SEED=42 mama motivate
+Print the same motivational message every time.
+.SH AUTHOR
+Written by the MAMA CLI contributors.
+.SH COPYRIGHT
+Copyright \(co 2026 MAMA CLI contributors.
+License MIT.
