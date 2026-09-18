@@ -1,0 +1,36 @@
+#!/usr/bin/make -f
+#
+# Build rules for the Ubuntu/Debian source package.
+#
+# Launchpad builders have no network access, so nothing here may touch npm.
+# The build uses node-typescript from the archive plus
+# packaging/node-shim.d.ts, which declares the one Node global src/ uses.
+# See tsconfig.debian.json.
+
+export DH_VERBOSE = 1
+
+%:
+	dh $@
+
+override_dh_auto_clean:
+	rm -rf dist src/generated
+
+override_dh_auto_build:
+	node scripts/gen-version.mjs
+	tsc -p tsconfig.debian.json
+
+override_dh_auto_test:
+	# The test suite imports node: modules and needs @types/node, neither of
+	# which is available to a builder. Tests run in CI on every push instead.
+
+override_dh_auto_install:
+	install -d debian/mama/usr/lib/mama
+	cp -r dist/src/. debian/mama/usr/lib/mama/
+	find debian/mama/usr/lib/mama -type f -exec chmod 644 {} +
+	# The compiled output is ESM; without this, node parses it as CommonJS.
+	printf '{\n  "type": "module"\n}\n' > debian/mama/usr/lib/mama/package.json
+	# Policy 10.4: interpreter paths in shebangs must be absolute.
+	sed -i '1s|^\#!/usr/bin/env node$$|\#!/usr/bin/node|' debian/mama/usr/lib/mama/cli.js
+	chmod 755 debian/mama/usr/lib/mama/cli.js
+	install -d debian/mama/usr/bin
+	ln -s ../lib/mama/cli.js debian/mama/usr/bin/mama

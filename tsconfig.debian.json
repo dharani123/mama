@@ -1,0 +1,15 @@
+{
+  // Build configuration for distribution packaging (Launchpad PPA, Debian).
+  //
+  // Differs from tsconfig.json in three ways, all forced by builders having
+  // no network access:
+  //   - "types": [] stops tsc looking for @types/* in node_modules
+  //   - packaging/node-shim.d.ts supplies the one global src/ needs
+  //   - tests are excluded; they import node: modules and need @types/node
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": [],
+    "outDir": "dist"
+  },
+  "include": ["src/**/*.ts", "packaging/node-shim.d.ts"]
+}

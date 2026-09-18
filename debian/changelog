@@ -1,0 +1,5 @@
+mama (1.0.0-1~noble1) noble; urgency=medium
+
+  * Initial release for Ubuntu 24.04 LTS (noble).
+
+ -- dharanify <dharani123@users.noreply.github.com>  Fri, 18 Sep 2026 14:30:00 +0530
