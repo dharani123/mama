@@ -80,10 +80,13 @@ sudo apt install ./mama_1.0.0-1_all.deb
 
 ### npm
 
-Not published to npm yet. The name `mama-cli` is taken on the registry by an
-unrelated project, so this would ship under a different name — see
-[issue tracker](https://github.com/dharani123/mama/issues) if you want it
-there.
+```bash
+npm install -g dharani-mama
+```
+
+The package is `dharani-mama` (the plain `mama` and `mama-cli` names belong to
+unrelated projects on the registry), but the command it installs is still
+`mama`.
 
 ### From source
 
