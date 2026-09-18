@@ -17,6 +17,8 @@ function usageRows(programName: string): [string, string][] {
 export function renderHelp(programName: string): string {
   const rows = usageRows(programName);
   const options: [string, string][] = [
+    ['--telugu', 'Show messages in Telugu script'],
+    ['--roman', 'Show messages in Latin script (default)'],
     ['--help, -h', 'Show this help'],
     ['--version, -v', 'Show version'],
   ];

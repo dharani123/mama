@@ -13,6 +13,20 @@ Sometimes you just need someone to say:
 ```console
 $ mama
 
+mama ❤️
+
+"nemmadiga veltunnavani badhapadaku mama,
+ agipoleduga... ade mukhyam."
+
+— ni terminal mama 😎
+```
+
+Telugu, written the way you'd type it to a friend. If your terminal renders
+Telugu script properly, `--telugu` gives you the real thing:
+
+```console
+$ mama --telugu
+
 మామా ❤️
 
 "నెమ్మదిగా వెళ్తున్నావని బాధపడకు మామా,
@@ -119,15 +133,11 @@ sudo apt install ./build/mama_1.0.0-1_all.deb
 ### Requirements
 
 - **Node.js 18 or newer** — that is the only requirement.
-- **A UTF-8 terminal.** MAMA speaks Telugu, so your terminal needs UTF-8
-  encoding and a font with Telugu glyphs. Most modern Linux terminals
-  (GNOME Terminal, Konsole, Alacritty, Kitty, WezTerm) handle this out of the
-  box. If you see boxes instead of letters:
-
-  ```bash
-  locale                              # LANG should end in .UTF-8
-  sudo apt install fonts-telugu       # Debian / Ubuntu
-  ```
+- **A UTF-8 terminal**, for the emoji. Default output is romanised Telugu in
+  plain Latin letters, so no special font is needed.
+- **Only if you want `--telugu`:** a font with Telugu glyphs
+  (`sudo apt install fonts-telugu`) *and* a terminal that can shape complex
+  text. Many cannot, which is why Latin is the default.
 
 ---
 
@@ -215,8 +225,30 @@ Or on a schedule, for the 11 PM crowd:
 | --- | --- |
 | `NO_COLOR` | Disable colour entirely ([no-color.org](https://no-color.org)) |
 | `FORCE_COLOR` | Keep colour even when output is piped |
+| `MAMA_TELUGU` | Use Telugu script by default (same as always passing `--telugu`) |
 | `MAMA_SEED` | Fix the random seed — the same seed always gives the same message |
 | `MAMA_DEBUG` | Show real stack traces instead of a friendly Telugu apology |
+
+### Script
+
+MAMA prints romanised Telugu by default — `parledu mama` rather than
+`పర్లేదు మామా`. Most terminal emulators cannot shape Telugu script correctly,
+because conjuncts and vowel marks need complex-text layout that a fixed
+character grid does not do; you get boxes or misplaced marks even with Telugu
+fonts installed. A message you can't read is worse than one in the wrong
+script.
+
+If your terminal does handle it, you lose nothing:
+
+```bash
+mama --telugu              # Telugu for one run
+export MAMA_TELUGU=1       # Telugu from now on
+mama --roman               # back to Latin for one run
+```
+
+The romanisation is generated from the Telugu by rule, so there is only ever
+one copy of each message to write and the two can never drift apart. Add a
+quote in Telugu and both forms work.
 
 Colour is off automatically when output is not a terminal, so `mama | cat`
 and `mama > motivation.txt` stay clean. Only cyan, yellow and dim are used,
