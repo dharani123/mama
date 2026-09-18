@@ -60,7 +60,7 @@ mama
 ### From source
 
 ```bash
-git clone <repository-url> mama
+git clone https://github.com/dharani123/mama.git mama
 cd mama
 npm install
 npm run build
@@ -205,7 +205,7 @@ There is a test that fails the build if the source ever imports
 ## Development
 
 ```bash
-git clone <repository-url> mama
+git clone https://github.com/dharani123/mama.git mama
 cd mama
 npm install
 

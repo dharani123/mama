@@ -6,8 +6,8 @@ Architecture: all
 Depends: nodejs (>= 18)
 Recommends: fonts-telugu
 Installed-Size: @INSTALLED_SIZE@
-Maintainer: MAMA CLI contributors <mama@example.invalid>
-Homepage: https://github.com/OWNER/mama
+Maintainer: dharanify <dharani123@users.noreply.github.com>
+Homepage: https://github.com/dharani123/mama
 Description: Telugu-speaking terminal buddy
  MAMA prints short, friendly, funny and motivational messages in Telugu and
  Telugu-English, the way a friend sitting next to you would say them.

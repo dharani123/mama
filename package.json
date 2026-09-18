@@ -2,13 +2,34 @@
   "name": "mama-cli",
   "version": "1.0.0",
   "description": "నీ టెర్మినల్ మామా — your Telugu-speaking terminal buddy.",
-  "keywords": ["cli", "telugu", "motivation", "fun", "terminal", "developer", "mama"],
+  "keywords": [
+    "cli",
+    "telugu",
+    "motivation",
+    "fun",
+    "terminal",
+    "developer",
+    "mama"
+  ],
   "license": "MIT",
+  "author": "dharanify",
+  "homepage": "https://github.com/dharani123/mama#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dharani123/mama.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dharani123/mama/issues"
+  },
   "type": "module",
   "bin": {
     "mama": "dist/src/cli.js"
   },
-  "files": ["dist/src", "README.md", "LICENSE"],
+  "files": [
+    "dist/src",
+    "README.md",
+    "LICENSE"
+  ],
   "engines": {
     "node": ">=18.0.0"
   },

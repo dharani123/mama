@@ -1,9 +1,9 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: mama-cli
-Source: https://github.com/OWNER/mama
+Source: https://github.com/dharani123/mama
 
 Files: *
-Copyright: 2026 MAMA CLI contributors
+Copyright: 2026 dharanify
 License: MIT
 
 License: MIT
