@@ -11,7 +11,7 @@ Sometimes you just need someone to say:
 **"పర్లేదు మామా." ❤️**
 
 ```console
-$ mama
+$ dharani-mama
 
 mama ❤️
 
@@ -25,7 +25,7 @@ Telugu, written the way you'd type it to a friend. If your terminal renders
 Telugu script properly, `--telugu` gives you the real thing:
 
 ```console
-$ mama --telugu
+$ dharani-mama --telugu
 
 మామా ❤️
 
@@ -42,27 +42,60 @@ and a friend who lives in your `$PATH`.
 
 ## Features
 
-| Command | What మామా does |
+MAMA is installed under two names, because the plain `mama` was taken on npm:
+
+| Installed via | Your command |
 | --- | --- |
-| `mama` | Random Telugu wisdom |
-| `mama motivate` | Motivation — persistence, discipline, getting back up |
-| `mama calm` | Slow down, breathe, one thing at a time |
-| `mama morning` | Start-of-day nudge ☀️ |
-| `mama night` | Let the day go, sleep well 🌙 |
-| `mama code` | Developer wisdom, mostly with a grin 👨‍💻 |
-| `mama git` | Git humour 🌿 |
-| `mama roast` | Roast your terminal 🔥 |
-| `mama coffee` | Coffee wisdom ☕ |
-| `mama friday` | Weekend mode 🎉 |
-| `mama --help` | Show help |
-| `mama --version` | Show version |
+| **npm** | `dharani-mama` |
+| **apt** (Debian/Ubuntu) | `mama` |
+
+Everything below is the same either way — substitute whichever you have.
+The program itself always prints the name you actually typed, so `--help`
+shows commands you can paste straight back.
+
+| Run | What మామా does |
+| --- | --- |
+| *(no arguments)* | Random Telugu wisdom |
+| `motivate` | Motivation — persistence, discipline, getting back up |
+| `calm` | Slow down, breathe, one thing at a time |
+| `morning` | Start-of-day nudge ☀️ |
+| `night` | Let the day go, sleep well 🌙 |
+| `code` | Developer wisdom, mostly with a grin 👨‍💻 |
+| `git` | Git humour 🌿 |
+| `roast` | Roast your terminal 🔥 |
+| `coffee` | Coffee wisdom ☕ |
+| `friday` | Weekend mode 🎉 |
+| `--telugu` | Telugu script instead of romanised |
+| `--help` | Show help |
+| `--version` | Show version |
+
+```bash
+dharani-mama roast        # if you installed from npm
+mama roast                # if you installed from apt
+```
 
 ---
 
 ## Installation
 
-### Debian / Ubuntu (recommended)
+### npm (recommended)
 
+```bash
+npm install -g dharani-mama
+```
+
+Installs the command as **`dharani-mama`**:
+
+```bash
+dharani-mama
+dharani-mama roast
+```
+
+Needs Node.js 18 or newer. Works on any platform Node runs on.
+
+### Debian / Ubuntu
+
+Installs the command as **`mama`**, plus a man page, and pulls in Node for you.
 Add the repository once:
 
 ```bash
@@ -82,34 +115,14 @@ Then, now and for every future version:
 sudo apt install mama
 ```
 
-This gives you `mama` in `/usr/bin` and a man page, so `man mama` works.
 `sudo apt upgrade` picks up new releases. Remove it with `sudo apt remove mama`.
 
 ### A single .deb, without the repository
 
 ```bash
-wget https://github.com/dharani123/mama/releases/download/v1.0.0/mama_1.0.0-1_all.deb
-sudo apt install ./mama_1.0.0-1_all.deb
+wget https://github.com/dharani123/mama/releases/latest/download/mama_1.1.0-1_all.deb
+sudo apt install ./mama_1.1.0-1_all.deb
 ```
-
-### npm
-
-```bash
-npm install -g dharani-mama
-```
-
-This installs the command as **`dharani-mama`**:
-
-```bash
-dharani-mama
-dharani-mama roast
-```
-
-The plain `mama` and `mama-cli` names both belong to unrelated projects on the
-registry, so the npm package and its command are `dharani-mama`. The Debian
-package installs the same program as `mama`. Either way the program reports
-whichever name you invoked it by, so `--help` always shows commands you can
-actually paste.
 
 ### From source
 
@@ -118,7 +131,7 @@ git clone https://github.com/dharani123/mama.git
 cd mama
 npm install
 npm run build
-npm link       # puts `mama` on your PATH
+npm link       # puts `dharani-mama` on your PATH
 ```
 
 ### Build the .deb yourself
@@ -127,7 +140,7 @@ Needs only `dpkg-deb` and `fakeroot`, both present on a stock Ubuntu:
 
 ```bash
 ./packaging/build-deb.sh
-sudo apt install ./build/mama_1.0.0-1_all.deb
+sudo apt install ./build/mama_1.1.0-1_all.deb
 ```
 
 ### Requirements
@@ -143,12 +156,11 @@ sudo apt install ./build/mama_1.0.0-1_all.deb
 
 ## Usage
 
-Examples below use `mama`, the name the Debian package installs. If you
-installed from npm the command is `dharani-mama` — everything else is
-identical.
+Examples below use `dharani-mama`, the npm command. If you installed from
+apt, the command is `mama` — everything after it is identical.
 
 ```console
-$ mama motivate
+$ dharani-mama motivate
 
 మామా 🔥
 
@@ -159,7 +171,7 @@ $ mama motivate
 ```
 
 ```console
-$ mama code
+$ dharani-mama code
 
 మామా 👨‍💻
 
@@ -170,7 +182,7 @@ Debug చెయ్యి. 😎
 ```
 
 ```console
-$ mama roast
+$ dharani-mama roast
 
 మామా 😂
 
@@ -183,7 +195,7 @@ $ mama roast
 ```
 
 ```console
-$ mama coffee
+$ dharani-mama coffee
 
 మామా ☕
 
@@ -197,7 +209,7 @@ Productivity:
 ```
 
 ```console
-$ mama something
+$ dharani-mama something
 
 మామా... 🤔
 
@@ -210,13 +222,13 @@ Try:
 ### Put మామా in your shell startup
 
 ```bash
-echo 'mama' >> ~/.bashrc      # a friend greets every new terminal
+echo 'dharani-mama' >> ~/.bashrc   # a friend greets every new terminal
 ```
 
 Or on a schedule, for the 11 PM crowd:
 
 ```cron
-0 23 * * * /usr/bin/mama night
+0 23 * * * /usr/bin/mama night        # path from the apt install
 ```
 
 ### Environment variables

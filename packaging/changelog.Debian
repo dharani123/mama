@@ -1,5 +1,11 @@
 mama (@VERSION@) noble; urgency=medium
 
+  * Documentation only: the README now names both installed commands.
+
+ -- dharanify <dharani123@users.noreply.github.com>  Fri, 18 Sep 2026 15:30:00 +0530
+
+mama (@VERSION@) noble; urgency=medium
+
   * Print romanised Telugu by default; --telugu keeps the Telugu script.
   * Take the command name from argv[0] so help text matches the install.
 
