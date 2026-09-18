@@ -47,41 +47,61 @@ and a friend who lives in your `$PATH`.
 
 ## Installation
 
+### Debian / Ubuntu (recommended)
+
+Add the repository once:
+
 ```bash
-npm install -g mama-cli
+sudo install -d -m 0755 /etc/apt/keyrings
+curl -fsSL https://dharani123.github.io/mama/mama.asc \
+  | sudo tee /etc/apt/keyrings/mama.asc > /dev/null
+
+echo "deb [signed-by=/etc/apt/keyrings/mama.asc] https://dharani123.github.io/mama stable main" \
+  | sudo tee /etc/apt/sources.list.d/mama.list > /dev/null
+
+sudo apt update
 ```
 
-Then, anywhere:
+Then, now and for every future version:
 
 ```bash
-mama
+sudo apt install mama
+```
+
+This gives you `mama` in `/usr/bin` and a man page, so `man mama` works.
+`sudo apt upgrade` picks up new releases. Remove it with `sudo apt remove mama`.
+
+### A single .deb, without the repository
+
+```bash
+wget https://github.com/dharani123/mama/releases/download/v1.0.0/mama_1.0.0-1_all.deb
+sudo apt install ./mama_1.0.0-1_all.deb
+```
+
+### npm
+
+```bash
+npm install -g mama-cli
 ```
 
 ### From source
 
 ```bash
-git clone https://github.com/dharani123/mama.git mama
+git clone https://github.com/dharani123/mama.git
 cd mama
 npm install
 npm run build
 npm link       # puts `mama` on your PATH
 ```
 
-### Debian / Ubuntu package
+### Build the .deb yourself
 
-Build a `.deb` from the repo (needs only `dpkg-deb` and `fakeroot`, both
-present on a stock Ubuntu):
+Needs only `dpkg-deb` and `fakeroot`, both present on a stock Ubuntu:
 
 ```bash
 ./packaging/build-deb.sh
 sudo apt install ./build/mama_1.0.0-1_all.deb
 ```
-
-This installs `mama` to `/usr/bin`, the program to `/usr/lib/mama`, and a man
-page — so `man mama` works. It depends on `nodejs (>= 18)`, which apt pulls in
-automatically, and recommends `fonts-telugu`.
-
-Remove it with `sudo apt remove mama`.
 
 ### Requirements
 
