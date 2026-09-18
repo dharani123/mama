@@ -80,9 +80,10 @@ sudo apt install ./mama_1.0.0-1_all.deb
 
 ### npm
 
-```bash
-npm install -g mama-cli
-```
+Not published to npm yet. The name `mama-cli` is taken on the registry by an
+unrelated project, so this would ship under a different name — see
+[issue tracker](https://github.com/dharani123/mama/issues) if you want it
+there.
 
 ### From source
 
