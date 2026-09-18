@@ -29,7 +29,7 @@ function main(): void {
     if (process.env['MAMA_DEBUG'] !== undefined) {
       throw error;
     }
-    process.stderr.write('mama... edo teda kottindi. 😅\nMAMA_DEBUG=1 petti malli try cheyyi.\n');
+    process.stderr.write('mama... yedho theda kottindhi. 😅\nMAMA_DEBUG=1 petti malli try cheyyi.\n');
     process.exitCode = 1;
   }
 }

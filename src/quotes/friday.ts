@@ -10,59 +10,59 @@ export const friday: readonly Message[] = [
   {
     body: `inkonchem opika mama...
 
-iroju Friday.
+eeroju Friday.
 
-Weekend ni kosam eduruchustundi.`,
+Weekend nee kosam yedhuruchusthundhi.`,
     footer: '😎',
   },
   {
-    body: `Friday sayantram production loki deploy vaddu mama.
+    body: `Friday saayanthram production loki deploy vadhdhu mama.
 
-Weekend ni weekend gane unchu.`,
+Weekend ni weekend gaane unchu.`,
     emoji: '🙏',
   },
   {
-    body: `varamanta kashtapaddavu mama.
-i rendu rojulu nivi.`,
+    body: `vaaramantha kashtapaddavu mama.
+ee rendu rojulu neevi.`,
   },
   {
-    body: `Friday natiki anni purti kavalani rul emi ledu mama.
-somavaram kuda oka roje.`,
+    body: `Friday naatiki anni poorthi kaavalani rule yemi ledhu mama.
+somavaram kooda oka roje.`,
   },
   {
-    body: `Weekend plan enti mama?
+    body: `Weekend plan yenti mama?
 
-'Code chesta' ante matram oppukonu.`,
+'Code chestha' ante maathram oppukonu.`,
   },
   {
-    body: `Friday nadu meeting pettevallaki
-oka special place untundi mama.`,
+    body: `Friday naadu meeting pettevallaki
+oka special place untundhi mama.`,
     emoji: '😄',
   },
   {
-    body: `Laptop musesi bayataku vellu mama.
-Sun ane oka pedda monitor undi — okasari chudu.`,
+    body: `Laptop moosesi bayataku vellu mama.
+Sun ane oka pedhdha monitor undhi — okasari choodu.`,
     emoji: '🌞',
   },
   {
-    body: `Weekend lo kuda Slack chuste
-asalu weekend ekkada mama?`,
+    body: `Weekend lo kooda Slack choosthe
+asalu weekend yekkada mama?`,
   },
   {
-    body: `ivaram okka pani baga chesina chalu mama.
-a satisfaction to intiki vellu.`,
+    body: `eevaram okka pani baaga chesina chaalu mama.
+aa satisfaction tho intiki vellu.`,
   },
   {
-    body: `Friday 5 PM ki deploy cheste
-Friday 7 PM ki rollback chestavu mama.`,
+    body: `Friday 5 PM ki deploy chesthe
+Friday 7 PM ki rollback chesthavu mama.`,
     emoji: '💀',
   },
   {
-    body: `somavaram nuvvu malli vastavu mama.
-appativaraku i project ni gurinche alochistu untundi.`,
+    body: `somavaram nuvvu malli vasthavu mama.
+appativaraku ee project nee gurinche aalochisthu untundhi.`,
   },
   {
-    body: `varamanta parigettavu mama.
-ippudu konchem nemmadiga naduvu.`,
+    body: `vaaramantha parigeththavu mama.
+ippudu konchem nemmadhiga naduvu.`,
   },
 ];

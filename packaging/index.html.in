@@ -62,7 +62,7 @@
 <body>
 <main>
   <h1>MAMA CLI</h1>
-  <p class="tagline">ni terminal mama — your Telugu-speaking terminal buddy.</p>
+  <p class="tagline">nee terminal mama — your Telugu-speaking terminal buddy.</p>
 
   <div class="sample">$ mama
 
@@ -71,7 +71,7 @@ mama ❤️
 "nemmadiga veltunnavani badhapadaku mama,
  agipoleduga... ade mukhyam."
 
-— ni terminal mama 😎</div>
+— nee terminal mama 😎</div>
 
   <h2>Install on Debian or Ubuntu</h2>
   <p>Add the repository once:</p>

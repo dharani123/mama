@@ -1,5 +1,13 @@
 mama (@VERSION@) noble; urgency=medium
 
+  * Respell every message so an English reader lands nearer the Telugu
+    pronunciation: dental t/d take an h, long vowels double in a word's
+    first syllable, and word-initial e takes its y glide.
+
+ -- dharanify <dharani123@users.noreply.github.com>  Fri, 18 Sep 2026 16:30:00 +0530
+
+mama (@VERSION@) noble; urgency=medium
+
   * Messages are now written in Latin letters throughout; the Telugu script
     source and the --telugu and --roman options are gone.
 

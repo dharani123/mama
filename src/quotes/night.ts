@@ -3,75 +3,75 @@ import type { Message } from './types.js';
 /** Winding down - `mama night`. */
 export const night: readonly Message[] = [
   {
-    body: `iroju anukunnanta cheyalekapoyava?
-parledu mama.
+    body: `eeroju anukunnantha cheyalekapoyava?
+parledhu mama.
 
-repu inko roju undi.
-ippudu prashantanga nidrapo.`,
-    footer: 'shubharatri ❤️',
+repu inko roju undhi.
+ippudu prashanthanga nidhrapo.`,
+    footer: 'shubharathri ❤️',
   },
   {
-    body: `Laptop musey mama.
-a bug repu kuda akkade untundi.`,
+    body: `Laptop moosey mama.
+aa bug repu kooda akkade untundhi.`,
   },
   {
-    body: `iroju nuvvu chesina okka manchi pani gurtuchesuko mama.
-adi chalu.`,
+    body: `eeroju nuvvu chesina okka manchi pani gurthuchesuko mama.
+adhi chaalu.`,
   },
   {
-    body: `repati tension ni ivala ratri moyaku mama.`,
+    body: `repati tension ni ivala raathri moyaku mama.`,
   },
   {
-    body: `nidra kuda productivity lo bhagame mama.
-evaru chepparu, kani nijam.`,
+    body: `nidhra kooda productivity lo bhaagame mama.
+yevaru chepparu, kaani nijam.`,
     emoji: '😴',
   },
   {
-    body: `iroju fail ayyava?
+    body: `eeroju fail ayyava?
 paduko mama.
-repu malli try cheddam.`,
+repu malli try chedhdham.`,
   },
   {
     body: `Phone ni pakkana pettu mama.
-a scroll eppatiki ayipodu.`,
+aa scroll yeppatiki ayipodhu.`,
     emoji: '📱',
   },
   {
-    body: `rojanta andari kosam pani cheshavu mama.
-ippudu konchem ni kosam.`,
+    body: `rojantha andhari kosam pani cheshavu mama.
+ippudu konchem nee kosam.`,
   },
   {
-    body: `chikati padindi ante roju mugisindani mama.
-lekkalu repu chuddam.`,
+    body: `cheekati padindhi ante roju mugisindhani mama.
+lekkalu repu choodhdham.`,
   },
   {
-    body: `iroju krutajnyata cheppalsina okka vishayam alochinchu mama.
-a alochanatone nidrapo.`,
+    body: `eeroju kruthajnyatha cheppalsina okka vishayam aalochinchu mama.
+aa aalochanathone nidhrapo.`,
     emoji: '🙏',
   },
   {
-    body: `ardharatri varaku code cheste hero kadu mama.
-repu alasipoyina developer avutavu.`,
+    body: `ardharathri varaku code chesthe hero kaadhu mama.
+repu alasipoyina developer avuthavu.`,
   },
   {
-    body: `iroju gadichipoyindi mama.
-manchaina chedaina — gadichipoyindi.`,
+    body: `eeroju gadichipoyindhi mama.
+manchaina chedaina — gadichipoyindhi.`,
   },
   {
     body: `inka okka commit anukuntunnava mama?
-ade mata ganta kritam kuda annavu.`,
+adhe maata ganta kritham kooda annavu.`,
     emoji: '😄',
   },
   {
-    body: `kala kanalante mundu nidrapovali mama.`,
+    body: `kala kanalante mundhu nidhrapovali mama.`,
     emoji: '😌',
   },
   {
-    body: `ni shariram irojanta ninnu mosindi mama.
-daniki kuda konchem rest ivvu.`,
+    body: `nee shariram eerojantha ninnu mosindhi mama.
+dhaaniki kooda konchem rest ivvu.`,
   },
   {
-    body: `repu em cheyalo okka line rasipettu mama.
-tarvata prashantanga paduko.`,
+    body: `repu yem cheyalo okka line raasipettu mama.
+tharvatha prashanthanga paduko.`,
   },
 ];

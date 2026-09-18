@@ -3,105 +3,105 @@ import type { Message } from './types.js';
 /** Everyday wisdom - what `mama` says when you run it with no arguments. */
 export const general: readonly Message[] = [
   {
-    body: `nemmadiga veltunnavani badhapadaku mama,
-agipoleduga... ade mukhyam.`,
+    body: `nemmadhiga velthunnavani baadhapadaku mama,
+aagipoledhuga... adhe mukhyam.`,
     emoji: '❤️',
   },
   {
-    body: `chinna adugu ayina munduke vestunnavu mama.
-ade chalu.`,
+    body: `chinna adugu ayina mundhuke vesthunnavu mama.
+adhe chaalu.`,
     emoji: '🌱',
     footer: 'Keep going ❤️',
   },
   {
-    body: `andariki nachchalani prayatninchaku mama.
-niku nachche pani cheyyi — migatadi danikade jarugutundi.`,
+    body: `andhariki nachchalani prayathninchaku mama.
+neeku nachche pani cheyyi — migathadhi dhaanikadhe jaruguthundhi.`,
   },
   {
-    body: `ninna jarigindi history mama.
-repu jarigedi mystery.
-ivala matram ni chetilo undi.`,
+    body: `ninna jarigindhi history mama.
+repu jarigedhi mystery.
+ivala maathram nee chethilo undhi.`,
     emoji: '🌤️',
   },
   {
-    body: `pratisari gelavalsina avasaram ledu mama.
-pratisari nerchukunte chalu.`,
+    body: `prathisari gelavalsina avasaram ledhu mama.
+prathisari nerchukunte chaalu.`,
   },
   {
-    body: `ni speed veru, valla speed veru mama.
-idi race kadu — idi ni journey.`,
+    body: `nee speed veru, vaalla speed veru mama.
+idhi race kaadhu — idhi nee journey.`,
     emoji: '🚶',
   },
   {
-    body: `polchukovadam modalupettina roje
-santosham agipotundi mama.`,
+    body: `polchukovadam modhalupettina roje
+santhosham aagipothundhi mama.`,
   },
   {
-    body: `okka roju sariga lekapote jivitam chedipoledu mama.
-okka roju matrame.`,
+    body: `okka roju sariga lekapothe jeevitham chedipoledhu mama.
+okka roju maathrame.`,
   },
   {
-    body: `anni samadhanalu ippude teliyalsina avasaram ledu mama.
-konni prashnalaku time matrame javabu.`,
+    body: `anni samadhanalu ippude theliyalsina avasaram ledhu mama.
+konni prashnalaku time maathrame javabu.`,
     emoji: '⏳',
   },
   {
-    body: `nuvvu enta duram vachchavo okasari venakki chudu mama.
-nike ashcharyam vestundi.`,
+    body: `nuvvu yentha dhooram vachchavo okasari venakki choodu mama.
+neeke aashcharyam vesthundhi.`,
     footer: 'Keep going ❤️',
   },
   {
-    body: `'tarvata cheddam' —
-prapanchamlo ati pedda abaddham ide mama.`,
+    body: `'tharvatha chedhdham' —
+prapanchamlo athi pedhdha abadhdham idhe mama.`,
     emoji: '😄',
   },
   {
-    body: `ni mida nike kopam vachchinappudu okasari agu mama.
-nuvvu niku friend, enemy kadu.`,
+    body: `nee meedha neeke kopam vachchinappudu okasari aagu mama.
+nuvvu neeku friend, enemy kaadhu.`,
   },
   {
-    body: `kashtam shashvatam kadu mama.
-nuvvu matram inka ikkade unnavu — ade proof.`,
+    body: `kashtam shaashvatham kaadhu mama.
+nuvvu maathram inka ikkade unnavu — adhe proof.`,
     emoji: '💪',
   },
   {
-    body: `evaru chudakapoyina nuvvu chese pani —
-ade ninnu nirvachistundi mama.`,
+    body: `yevaru choodakapoyina nuvvu chese pani —
+adhe ninnu nirvachisthundhi mama.`,
   },
   {
     body: `anni plan prakaram jaragavu mama.
-kani plan lekunda bayaluderite
-ekkadiki vellavo kuda teliyadu.`,
+kaani plan lekunda bayaludherithe
+yekkadiki vellavo kooda theliyadhu.`,
   },
   {
-    body: `iroju alasipoyavante
-edo okati cheshavani artham mama.`,
+    body: `eeroju alasipoyavante
+yedho okati cheshavani artham mama.`,
   },
   {
-    body: `sahayam adagadam balahinata kadu mama.
-adi shortcut.`,
+    body: `sahayam adagadam balahinatha kaadhu mama.
+adhi shortcut.`,
     emoji: '🤝',
   },
   {
-    body: `okkati baga cheyadam
-padi panulu sagam sagam cheyadam kante melu mama.`,
+    body: `okkati baaga cheyadam
+padhi panulu sagamsagam cheyadam kante melu mama.`,
   },
   {
-    body: `niku nachchani pani roju chestunnava mama?
-okkasari alochinchu — enduku chestunnavu?`,
+    body: `neeku nachchani pani roju chesthunnava mama?
+okkasari aalochinchu — yendhuku chesthunnavu?`,
   },
   {
-    body: `manasu ninda alochanalunte oka kagitam tisuko mama.
-raseste sagam bharam taggutundi.`,
+    body: `manasu ninda aalochanalunte oka kaagitham theesuko mama.
+raasesthe sagam bhaaram thagguthundhi.`,
     emoji: '📝',
   },
   {
-    body: `gelupu ante eppudu paiki velladam kadu mama.
-padina pratisari levadam.`,
+    body: `gelupu ante yeppudu paiki velladam kaadhu mama.
+padina prathisari levadam.`,
   },
   {
-    body: `nito jivitantam undedi nuvve mama.
-kabatti niku nuvvu konchem dayaga undu.`,
+    body: `neetho jeevithantham undedhi nuvve mama.
+kaabatti neeku nuvvu konchem dhayaga undu.`,
     emoji: '❤️',
   },
 ];

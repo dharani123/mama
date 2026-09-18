@@ -3,103 +3,103 @@ import type { Message } from './types.js';
 /** Persistence, discipline, failure, consistency - `mama motivate`. */
 export const motivate: readonly Message[] = [
   {
-    body: `niku nuvvu nammakam pettukunna roju
-ni jivitamlo asalu turning point modalavutundi mama.`,
-    footer: 'lechi pani modalupettu ra. 💪',
+    body: `neeku nuvvu nammakam pettukunna roju
+nee jeevithamlo asalu turning point modhalavuthundhi mama.`,
+    footer: 'lechi pani modhalupettu raa. 💪',
   },
   {
-    body: `Motivation roju radu mama.
-kani discipline roju vastundi.
-danne nammuko.`,
+    body: `Motivation roju raadhu mama.
+kaani discipline roju vasthundhi.
+dhaanne nammuko.`,
   },
   {
-    body: `modalupettadame kashtam mama.
-modati padi nimishalu datite
-migatadi danikade jarugutundi.`,
+    body: `modhalupettadame kashtam mama.
+modhati padhi nimishalu dhaatithe
+migathadhi dhaanikadhe jaruguthundhi.`,
     emoji: '🚀',
   },
   {
     body: `Fail ayyava mama?
-santoshinchu — ippudu edi pani cheyado niku telusu.`,
+santhoshinchu — ippudu yedhi pani cheyadho neeku thelusu.`,
   },
   {
-    body: `rojuki okka shatam better ayite
-samvatsaram tarvata ninnu nuvve gurtupattalevu mama.`,
+    body: `rojuki okka shaatham better ayithe
+samvathsaram tharvatha ninnu nuvve gurthupattalevu mama.`,
     emoji: '📈',
   },
   {
-    body: `evaro vachchi ninnu gelipincharu mama.
-a evaro nuvve.`,
+    body: `yevaro vachchi ninnu gelipincharu mama.
+aa yevaro nuvve.`,
   },
   {
-    body: `pedda kala kanadam tappu kadu mama.
-chinna adugu veyakapovadame tappu.`,
+    body: `pedhdha kala kanadam thappu kaadhu mama.
+chinna adugu veyakapovadame thappu.`,
   },
   {
-    body: `niku time ledani kadu mama —
-adi ni list lo paina ledani.`,
+    body: `neeku time ledhani kaadhu mama —
+adhi nee list lo paina ledhani.`,
   },
   {
-    body: `opika ante emi cheyakunda kurchovadam kadu mama.
-phalitam kanipinchakapoyina pani apakapovadam.`,
+    body: `opika ante yemi cheyakunda koorchovadam kaadhu mama.
+phalitham kanipinchakapoyina pani aapakapovadam.`,
   },
   {
-    body: `iroju vadileste repu inka kashtamavutundi mama.
+    body: `eeroju vadhilesthe repu inka kashtamavuthundhi mama.
 ivale okka adugu veyyi.`,
   },
   {
-    body: `ni kante telivainavallu undochchu mama.
-kani ni kante ekkuva pattudala unnavallu undakudadu.`,
+    body: `nee kante thelivainavallu undochchu mama.
+kaani nee kante yekkuva pattudhala unnavallu undakudadhu.`,
     emoji: '🔥',
   },
   {
-    body: `andaru 'kudaradu' annappude
-nuvvu modalupettali mama.`,
+    body: `andharu 'kudharadhu' annappude
+nuvvu modhalupettali mama.`,
   },
   {
-    body: `Result gurinchi alochinchaku mama.
-roju chese pani mida alochinchu.
-Result danikade vastundi.`,
+    body: `Result gurinchi aalochinchaku mama.
+roju chese pani meedha aalochinchu.
+Result dhaanikadhe vasthundhi.`,
   },
   {
-    body: `ni kala niku konchem bhayam puttinchakapote
-adi chala chinnadi mama.`,
+    body: `nee kala neeku konchem bhayam puttinchakapothe
+adhi chaala chinnadhi mama.`,
     emoji: '🔥',
   },
   {
     body: `alasata veru, otami veru mama.
-alasipote rest tisuko — agipoku.`,
+alasipothe rest theesuko — aagipoku.`,
   },
   {
-    body: `ni daggara unnadantone modalupettu mama.
-Perfect setup kosam waiting cheste
-jivitame ayipotundi.`,
+    body: `nee dhaggara unnadhanthone modhalupettu mama.
+Perfect setup kosam waiting chesthe
+jeevithame ayipothundhi.`,
   },
   {
-    body: `evaraina ninnu takkuva anchana veste
-adi ni advantage mama.
-nishshabdanga pani chesuko.`,
+    body: `yevaraina ninnu thakkuva anchana vesthe
+adhi nee advantage mama.
+nishshabdhanga pani chesuko.`,
     emoji: '😌',
   },
   {
-    body: `Consistency ante pratiroju 100% kadu mama.
-chedda rojullo kuda 10% cheyadam.`,
+    body: `Consistency ante prathiroju 100% kaadhu mama.
+chedda rojullo kooda 10% cheyadam.`,
   },
   {
-    body: `nuvvu ennisarlu paddavo evaru lekkapettaru mama.
-chivariki lechi nilabaddava leda — ade chustaru.`,
+    body: `nuvvu yennisarlu paddavo yevaru lekkapettaru mama.
+chivariki lechi nilabaddava ledha — adhe choostharu.`,
   },
   {
-    body: `bhayam podu mama.
-bhayanto pate munduku nadavadam nerchuko.`,
+    body: `bhayam podhu mama.
+bhayantho paate mundhuku nadavadam nerchuko.`,
   },
   {
-    body: `ni poti ninnati nuvve mama.
-migatavallanu vadiley.`,
+    body: `nee poti ninnati nuvve mama.
+migathavallanu vadhiley.`,
   },
   {
     body: `ippudu kashtapadu mama.
-tarvata evariki explain cheyalsina avasaram undadu.`,
-    footer: 'lechi pani modalupettu ra. 💪',
+tharvatha yevariki explain cheyalsina avasaram undadhu.`,
+    footer: 'lechi pani modhalupettu raa. 💪',
   },
 ];

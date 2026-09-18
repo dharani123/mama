@@ -30,7 +30,7 @@ export function renderHelp(programName: string): string {
   return [
     accent('MAMA CLI 😎'),
     '',
-    'ni terminal mama.',
+    'nee terminal mama.',
     '',
     bold('Usage:'),
     ...rows.map(row),
@@ -38,7 +38,7 @@ export function renderHelp(programName: string): string {
     bold('Options:'),
     ...options.map(row),
     '',
-    dim('MAMA eppudu ni mata vintundi mama — kani e command ni taraphuna run cheyadu. 🙂'),
+    dim('MAMA yeppudu nee maata vintundhi mama — kaani ye command nee tharaphuna run cheyadhu. 🙂'),
   ].join('\n');
 }
 
@@ -51,7 +51,7 @@ export function renderUnknown(input: string, programName: string): string {
   return [
     accent('mama... 🤔'),
     '',
-    `"${input}" naku inka teliyadu.`,
+    `"${input}" naaku inka theliyadhu.`,
     '',
     'Try:',
     `  ${programName} --help`,

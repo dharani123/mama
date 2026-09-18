@@ -3,65 +3,65 @@ import type { Message } from './types.js';
 /** Developer wisdom, mostly with a grin - `mama code`. */
 export const code: readonly Message[] = [
   {
-    body: `Bug chusi bhayapadaku mama...
-Bug kuda evaro rasina code e.`,
+    body: `Bug choosi bhayapadaku mama...
+Bug kooda yevaro raasina code ye.`,
     footer: 'Debug cheyyi. 😎',
   },
   {
-    body: `Code pani cheyakapote mundu
-computer ni tittaku mama...
+    body: `Code pani cheyakapothe mundhu
+computer ni thittaku mama...
 
-nuvvu rasinde kada.`,
+nuvvu raasindhe kadha.`,
     emoji: '😂',
   },
   {
-    body: `'na machine lo pani chestondi' anedi
-solution kadu mama.
-adi alibi.`,
+    body: `'naa machine lo pani chesthondhi' anedhi
+solution kaadhu mama.
+adhi alibi.`,
     emoji: '😄',
   },
   {
-    body: `Comment rayakapote aru nelala tarvata
-ni code nike kottaga untundi mama.`,
+    body: `Comment raayakapothe aaru nelala tharvatha
+nee code neeke koththaga untundhi mama.`,
   },
   {
-    body: `Production loki push chese mundu
-okasari alochinchu mama.`,
+    body: `Production loki push chese mundhu
+okasari aalochinchu mama.`,
     emoji: '😂',
   },
   {
-    body: `Stack Overflow nunchi copy chesina code pani cheste
-anandinchu mama.
-enduku pani chestundo matram adagaku.`,
+    body: `Stack Overflow nunchi copy chesina code pani chesthe
+aanandhinchu mama.
+yendhuku pani chesthundho maathram adagaku.`,
   },
   {
-    body: `'Requirement maradu' annara mama?
+    body: `'Requirement maaradhu' annara mama?
 
-adi joke. navvu.`,
+adhi joke. navvu.`,
     emoji: '😅',
   },
   {
-    body: `AI code rasindani santoshapadaku mama.
-Production lo pager mogite lechedi nuvve.`,
+    body: `AI code raasindhani santhoshapadaku mama.
+Production lo pager mogithe lechedhi nuvve.`,
     emoji: '🤖',
   },
   {
-    body: `Technical debt vaddito saha tirigi vastundi mama.
-adi eppudu worst time lone.`,
+    body: `Technical debt vadditho saha thirigi vasthundhi mama.
+adhi yeppudu worst time lone.`,
   },
   {
-    body: `Code review lo comments ekkuva vachchaya mama?
-ante evaro ni code ni nijanga chadivarani artham.
-santoshinchu.`,
+    body: `Code review lo comments yekkuva vachchaya mama?
+ante yevaro nee code ni nijanga chadhivarani artham.
+santhoshinchu.`,
   },
   {
-    body: `'Test rayadam waste of time' anukunnava mama?
-ratri rendintiki production call vastundi —
-appudu matladukundam.`,
+    body: `'Test raayadam waste of time' anukunnava mama?
+raathri rendintiki production call vasthundhi —
+appudu maatladukundham.`,
   },
   {
-    body: `sagam bugs typo valle vastayi mama.
-mundu okasari spelling chudu.`,
+    body: `sagam bugs typo valle vasthayi mama.
+mundhu okasari spelling choodu.`,
   },
   {
     body: `Meeting invite lo 'quick sync' ante
@@ -69,45 +69,45 @@ kanisam 45 nimishalu mama.`,
     emoji: '😩',
   },
   {
-    body: `Code ni simple ga rayi mama.
-repu danni maintain chesevadu
-kopanga unna nuvve kavachchu.`,
+    body: `Code ni simple gaa raayi mama.
+repu dhaanni maintain chesevadu
+kopanga unna nuvve kaavachchu.`,
   },
   {
-    body: `Estimate ichchetappudu rendintalu cheyyi mama.
-appudu kuda saripodu.`,
+    body: `Estimate ichchetappudu rendinthalu cheyyi mama.
+appudu kooda saripodhu.`,
   },
   {
-    body: `Error message ni purtiga chaduvu mama.
-adi ninnu tittadam ledu — dari chupistondi.`,
+    body: `Error message ni poorthiga chadhuvu mama.
+adhi ninnu thittadam ledhu — dhaari choopisthondhi.`,
   },
   {
-    body: `'Refactor cheddam' anukunna file ni
-chivariki evaru muttukoru mama.`,
+    body: `'Refactor chedhdham' anukunna file ni
+chivariki yevaru muttukoru mama.`,
     emoji: '😂',
   },
   {
-    body: `Documentation evaru chadavaru antaru mama.
-kani lenappudu matram andaru adugutaru.`,
+    body: `Documentation yevaru chadhavaru antaru mama.
+kaani lenappudu maathram andharu adugutharu.`,
   },
   {
-    body: `'idi chinna change mama' —
-chala outage lu i matatone modalayyayi.`,
+    body: `'idhi chinna change mama' —
+chaala outage lu ee maatathone modhalayyayi.`,
     emoji: '🔥',
   },
   {
-    body: `Break tisukunna tarvata chuste
-a bug padi nimishallo dorukutundi mama.
-nammakapote try cheyyi.`,
+    body: `Break theesukunna tharvatha choosthe
+aa bug padhi nimishallo dhorukuthundhi mama.
+nammakapothe try cheyyi.`,
   },
   {
-    body: `Code rayadam kante
-samasyanu artham chesukovadanike ekkuva time pettu mama.`,
+    body: `Code raayadam kante
+samasyanu artham chesukovadanike yekkuva time pettu mama.`,
   },
   {
     body: `Legacy code ante mama —
-pani chestondi, enduko evariki teliyadu,
-muttukovadaniki andaru bhayapadataru.`,
+pani chesthondhi, yendhuko yevariki theliyadhu,
+muttukovadaniki andharu bhayapadatharu.`,
     emoji: '🏛️',
   },
 ];

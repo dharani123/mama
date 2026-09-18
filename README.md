@@ -1,6 +1,6 @@
 # MAMA CLI 😎
 
-> ni terminal mama.
+> nee terminal mama.
 
 MAMA is your Telugu-speaking terminal buddy.
 
@@ -8,17 +8,17 @@ Sometimes you need debugging.
 Sometimes you need motivation.
 Sometimes you just need someone to say:
 
-**"parledu mama." ❤️**
+**"parledhu mama." ❤️**
 
 ```console
 $ dharani-mama
 
 mama ❤️
 
-"nemmadiga veltunnavani badhapadaku mama,
- agipoleduga... ade mukhyam."
+"andhariki nachchalani prayathninchaku mama.
+ neeku nachche pani cheyyi — migathadhi dhaanikadhe jaruguthundhi."
 
-— ni terminal mama 😎
+— nee terminal mama 😎
 ```
 
 Telugu, written in Latin letters the way you'd type it to a friend — so it
@@ -148,21 +148,21 @@ apt, the command is `mama` — everything after it is identical.
 ```console
 $ dharani-mama motivate
 
-mama 📈
+mama 🔥
 
-"rojuki okka shatam better ayite
- samvatsaram tarvata ninnu nuvve gurtupattalevu mama."
+"pedhdha kala kanadam thappu kaadhu mama.
+ chinna adugu veyakapovadame thappu."
 
-lechi pani modalupettu ra. 💪
+lechi pani modhalupettu raa. 💪
 ```
 
 ```console
 $ dharani-mama code
 
-mama 😂
+mama 👨‍💻
 
-"Production loki push chese mundu
- okasari alochinchu mama."
+"sagam bugs typo valle vasthayi mama.
+ mundhu okasari spelling choodu."
 ```
 
 ```console
@@ -170,9 +170,9 @@ $ dharani-mama roast
 
 mama 🔥
 
-"ni CSS lo !important ennisarlu undo lekkapettanu mama.
+"nee CSS lo !important yennisarlu undho lekkapettanu mama.
 
- adi stylesheet kadu — adi oka argument."
+ adhi stylesheet kaadhu — adhi oka argument."
 ```
 
 ```console
@@ -180,8 +180,8 @@ $ dharani-mama coffee
 
 mama ☕
 
-"Tea vs Coffee godava vaddu mama.
- mukhyam entante — oka break tisuko."
+"nee blood lo caffeine kaadhu mama —
+ caffeine lo blood."
 ```
 
 ```console
@@ -189,7 +189,7 @@ $ dharani-mama something
 
 mama... 🤔
 
-"something" naku inka teliyadu.
+"something" naaku inka theliyadhu.
 
 Try:
   mama --help
@@ -291,10 +291,10 @@ Open the right file in `src/quotes/` and add an entry:
 
 ```ts
 {
-  body: `Code review lo comments ekkuva vachchaya mama?
-ante evaro ni code ni nijanga chadivarani artham.`,
+  body: `Code review lo comments yekkuva vachchaya mama?
+ante yevaro nee code ni nijanga chadhivarani artham.`,
   emoji: '😄',            // optional, overrides the category default
-  footer: 'santoshinchu.', // optional; `null` means no sign-off
+  footer: 'santhoshinchu.', // optional; `null` means no sign-off
 },
 ```
 
@@ -303,12 +303,18 @@ every message renders, and that no line is too wide for an 80-column terminal.
 
 **Style guide for quotes**
 
-- **Write Telugu in Latin letters, not Telugu script** — `parledu mama`.
+- **Write Telugu in Latin letters, not Telugu script** — `parledhu mama`.
   Terminals cannot shape Telugu script reliably, so the whole corpus is
   romanised; a quote in Telugu script would be unreadable for most people
   running this, and CI will reject it.
-- Spell it the way you'd type it to a friend: no diacritics, no doubled long
-  vowels. `baga`, not `baagaa`.
+- Spell it so an English reader lands near the Telugu pronunciation:
+  - the soft (dental) t and d take an h — `tharvatha`, `ledhu`, `mundhu`.
+    The hard (retroflex) ones do not — `padaku`, `choodu`, `okkati`.
+  - double a long vowel only in a word's **first** syllable — `laabham`,
+    `naalugu`, `oopiri`, but `alasipothavu`, `nemmadhiga`.
+  - a word starting with the "e" sound takes the y it is pronounced with —
+    `yedhi`, `yem`, `yekkuva`, `yeppatiki`.
+  - English loanwords stay English — `tension`, not `tenshan`.
 - Developer English stays English — `code`, `bug`, `commit`, `push`, `branch`,
   `production`, `deploy`, `coffee`, `terminal`. Don't translate technical
   words just because you can.

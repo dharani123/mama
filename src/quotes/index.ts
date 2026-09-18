@@ -32,11 +32,11 @@ export const QUOTES: Readonly<Record<Category, readonly Message[]>> = {
  * formulaic.
  */
 export const STYLES: Readonly<Record<Category, CategoryStyle>> = {
-  general: { heading: 'mama', emoji: '❤️', footer: '— ni terminal mama 😎' },
-  motivate: { heading: 'mama', emoji: '🔥', footer: 'lechi pani modalupettu ra. 💪' },
-  calm: { heading: 'mama', emoji: '🧘', footer: 'nemmadiga vellu. ❤️' },
-  morning: { heading: 'shubhodayam mama', emoji: '☀️', footer: 'Have a great day mama! 💪' },
-  night: { heading: 'mama', emoji: '🌙', footer: 'shubharatri ❤️' },
+  general: { heading: 'mama', emoji: '❤️', footer: '— nee terminal mama 😎' },
+  motivate: { heading: 'mama', emoji: '🔥', footer: 'lechi pani modhalupettu raa. 💪' },
+  calm: { heading: 'mama', emoji: '🧘', footer: 'nemmadhiga vellu. ❤️' },
+  morning: { heading: 'shubhodhayam mama', emoji: '☀️', footer: 'Have a great day mama! 💪' },
+  night: { heading: 'mama', emoji: '🌙', footer: 'shubharathri ❤️' },
   code: { heading: 'mama', emoji: '👨‍💻' },
   git: { heading: 'mama', emoji: '🌿' },
   roast: { heading: 'mama', emoji: '🔥' },

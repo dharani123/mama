@@ -3,75 +3,75 @@ import type { Message } from './types.js';
 /** Start-of-day nudges - `mama morning`. */
 export const morning: readonly Message[] = [
   {
-    body: `iroju perfect ga undalsina avasaram ledu.
-ninnati kante okka adugu mundunte chalu.`,
+    body: `eeroju perfect gaa undalsina avasaram ledhu.
+ninnati kante okka adugu mundhunte chaalu.`,
     footer: 'Have a great day mama! 💪',
   },
   {
     body: `lechava mama?
-ade iroju modati win.`,
+adhe eeroju modhati win.`,
     emoji: '✅',
   },
   {
-    body: `iroju cheyalsina okka pani rasuko mama.
-migatadanta bonus.`,
+    body: `eeroju cheyalsina okka pani raasuko mama.
+migathadhantha bonus.`,
   },
   {
-    body: `Coffee tagu, oka deep breath tisuko,
-tarvata prapanchanni edurko mama.`,
+    body: `Coffee thaagu, oka deep breath theesuko,
+tharvatha prapanchanni yedhurko mama.`,
     emoji: '☕',
   },
   {
-    body: `ninnati chetta roju ivaltiki vartinchadu mama.
-idi kotta roju.`,
+    body: `ninnati cheththa roju ivaltiki varthinchadhu mama.
+idhi koththa roju.`,
   },
   {
-    body: `udayam modati ganta nidi mama.
-danni phone ki ivvaku.`,
+    body: `udhayam modhati ganta needhi mama.
+dhaanni phone ki ivvaku.`,
     emoji: '📵',
   },
   {
-    body: `iroju evaro okariki oka manchi mata cheppu mama.
-adi ni rojune baguchestundi.`,
+    body: `eeroju yevaro okariki oka manchi maata cheppu mama.
+adhi nee rojune baaguchesthundhi.`,
   },
   {
-    body: `pedda goal ni iroju varake kudinchu mama.
-iroju em cheyagalavo ade cheyyi.`,
+    body: `pedhdha goal ni eeroju varake kudhinchu mama.
+eeroju yem cheyagalavo adhe cheyyi.`,
   },
   {
-    body: `suryudu roju lestadu mama.
-evaru chappatlu kottakapoyina.
-nuvvu ante.`,
+    body: `sooryudu roju lesthadu mama.
+yevaru chappatlu kottakapoyina.
+nuvvu anthe.`,
   },
   {
     body: `Todo list chinnaga unchu mama.
-purti cheyagaliginante rayi.`,
+poorthi cheyagaliginanthe raayi.`,
   },
   {
-    body: `udayam chese modati pani
-rojantatini decide chestundi mama.`,
+    body: `udhayam chese modhati pani
+rojanthatini decide chesthundhi mama.`,
   },
   {
-    body: `iroju niku oka avakasham ichcharu mama.
+    body: `eeroju neeku oka avakasham ichcharu mama.
 vrutha cheyaku.`,
     emoji: '🌅',
   },
   {
-    body: `alaram aidusarlu snooze cheshava mama?
-parledu — ippudu lechavuga.`,
+    body: `alaram aidhusarlu snooze cheshava mama?
+parledhu — ippudu lechavuga.`,
     emoji: '😄',
   },
   {
-    body: `iroju kashtamaina pani mundu cheyyi mama.
-migata rojanta telikaga untundi.`,
+    body: `eeroju kashtamaina pani mundhu cheyyi mama.
+migatha rojantha thelikaga untundhi.`,
   },
   {
-    body: `ni roju ela undalo nuvve rasuko mama.
-lekapote evaro okaru rasestaru.`,
+    body: `nee roju yela undalo nuvve raasuko mama.
+lekapothe yevaro okaru raasestharu.`,
   },
   {
-    body: `nillu tagava mama?
-Code tarvata. mundu nillu.`,
+    body: `neellu thaagava mama?
+Code tharvatha. mundhu neellu.`,
     emoji: '💧',
   },
 ];

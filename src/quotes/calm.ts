@@ -9,77 +9,77 @@ export const calm: readonly Message[] = [
   {
     body: `anni ippude solve cheyalsina avasaram ledhu mama.
 
-okkasari upiri pilchu...
-okka pani mida focus pettu.`,
-    footer: 'nemmadiga vellu. ❤️',
+okkasari oopiri peelchu...
+okka pani meedha focus pettu.`,
+    footer: 'nemmadhiga vellu. ❤️',
   },
   {
     body: `tension padaku mama.
-idi kuda gadichipotundi.`,
+idhi kooda gadichipothundhi.`,
   },
   {
-    body: `okka nimisham laptop musesi
-kitiki bayataku chudu mama.
-prapancham inka akkade undi.`,
+    body: `okka nimisham laptop moosesi
+kitiki bayataku choodu mama.
+prapancham inka akkade undhi.`,
     emoji: '🪟',
   },
   {
-    body: `ni chetilo leni vati gurinchi
-alochinchi em labham mama?`,
+    body: `nee chethilo leni vaati gurinchi
+aalochinchi yem laabham mama?`,
   },
   {
-    body: `anni okesari cheyalanukunte edi kadu mama.
-mundu okkati. tarvata inkoti.`,
+    body: `anni okesari cheyalanukunte yedhi kaadhu mama.
+mundhu okkati. tharvatha inkoti.`,
   },
   {
-    body: `Deep breath tisuko mama.
+    body: `Deep breath theesuko mama.
 
-lopaliki... nalugu.
-agu... nalugu.
-bayataku... aru.
+lopaliki... naalugu.
+aagu... naalugu.
+bayataku... aaru.
 
 malli okasari.`,
     emoji: '🌬️',
   },
   {
-    body: `ni brain ki kuda restart kavali mama.
-padi nimishalu walk vellira.`,
+    body: `nee brain ki kooda restart kaavali mama.
+padhi nimishalu walk vellira.`,
   },
   {
-    body: `ippudu anipinchenta pedda problem kadu mama.
-repu udayam malli okasari chudu.`,
+    body: `ippudu anipinchentha pedhdha problem kaadhu mama.
+repu udhayam malli okasari choodu.`,
   },
   {
-    body: `annitiki nuvve badhyata tisukovalsina avasaram ledu mama.`,
+    body: `annitiki nuvve baadhyatha theesukovalsina avasaram ledhu mama.`,
   },
   {
-    body: `pani eppatiki ayipodu mama.
-kani nuvvu alasipotavu.
-anduke break tisukovadam kuda panilo bhagame.`,
+    body: `pani yeppatiki ayipodhu mama.
+kaani nuvvu alasipothavu.
+andhuke break theesukovadam kooda panilo bhaagame.`,
   },
   {
-    body: `alochanalu ekkuvaite oka list rayi mama.
-talalo unnantasepe avi peddaga kanipistayi.`,
+    body: `aalochanalu yekkuvaithe oka list raayi mama.
+thalalo unnanthasepe avi pedhdhaga kanipisthayi.`,
     emoji: '📝',
   },
   {
-    body: `niku ippudu kavalsindi inko solution kadu mama.
-konchem nidra.`,
+    body: `neeku ippudu kaavalsindhi inko solution kaadhu mama.
+konchem nidhra.`,
   },
   {
-    body: `andaru bagane unnarani anukoku mama.
-prati okkariki oka kashtam untundi —
-nidi matrame niku kanipistundi.`,
+    body: `andharu baagane unnarani anukoku mama.
+prathi okkariki oka kashtam untundhi —
+needhi maathrame neeku kanipisthundhi.`,
   },
   {
-    body: `nemmadiga velladam agipovadam kadu mama.`,
+    body: `nemmadhiga velladam aagipovadam kaadhu mama.`,
   },
   {
-    body: `i kshanamlo em bagundo okkati cheppu mama.
-okkati chalu.`,
+    body: `ee kshanamlo yem baagundho okkati cheppu mama.
+okkati chaalu.`,
   },
   {
-    body: `kangaru padite pani veganga jaragadu mama.
-prashantanga untene jarugutundi.`,
+    body: `kangaru padithe pani veganga jaragadhu mama.
+prashanthanga untene jaruguthundhi.`,
   },
 ];

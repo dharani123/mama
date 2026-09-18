@@ -9,9 +9,9 @@ import type { Message } from './types.js';
  */
 export const roast: readonly Message[] = [
   {
-    body: `ni code chusanu mama...
+    body: `nee code choosanu mama...
 
-idi code review kadu,
+idhi code review kaadhu,
 archaeological excavation.`,
     footer: '💀',
   },
@@ -20,14 +20,14 @@ archaeological excavation.`,
 18 Git branches,
 3 TODO files...
 
-nuvvu developer va
-leka operating system va?`,
+nuvvu developer vaa
+leka operating system vaa?`,
     emoji: '😂',
   },
   {
-    body: `ni function 400 lines undi mama.
+    body: `nee function 400 lines undhi mama.
 
-adi function kadu — adi oka novel.
+adhi function kaadhu — adhi oka novel.
 Chapter 1: imports.`,
   },
   {
@@ -35,119 +35,119 @@ Chapter 1: imports.`,
 console.log('here2')
 console.log('WHY')
 
-mama, idi debugging kadu —
-idi oka emotional journey.`,
+mama, idhi debugging kaadhu —
+idhi oka emotional journey.`,
     emoji: '😭',
   },
   {
-    body: `ni CSS lo !important ennisarlu undo lekkapettanu mama.
+    body: `nee CSS lo !important yennisarlu undho lekkapettanu mama.
 
-adi stylesheet kadu — adi oka argument.`,
+adhi stylesheet kaadhu — adhi oka argument.`,
   },
   {
-    body: `node_modules size okasari chushava mama?
+    body: `node_modules size okasari chooshava mama?
 
-ni project: 200 lines.
+nee project: 200 lines.
 Dependencies: 200 MB.`,
     emoji: '📦',
   },
   {
-    body: `Friday sayantram deploy chestunnava mama?
+    body: `Friday saayanthram deploy chesthunnava mama?
 
-dhairyam ante ide.
-telivi matram kadu.`,
+dhairyam ante idhe.
+thelivi maathram kaadhu.`,
   },
   {
-    body: `ni TODO comment 2019 nunchi akkade undi mama.
+    body: `nee TODO comment 2019 nunchi akkade undhi mama.
 
-adi TODO kadu — adi oka memorial.`,
+adhi TODO kaadhu — adhi oka memorial.`,
   },
   {
-    body: `ni variable perlu:
+    body: `nee variable perlu:
 data, data2, finalData, finalData2.
 
-mama, nuvvu code rayaledu —
+mama, nuvvu code raayaledhu —
 oka puzzle srushtinchavu.`,
     emoji: '🧩',
   },
   {
     body: `Callback lopala callback,
-dani lopala inko callback...
+dhaani lopala inko callback...
 
-mama idi code kadu — idi Inception.`,
+mama idhi code kaadhu — idhi Inception.`,
   },
   {
-    body: `ni commit message: 'stuff'.
+    body: `nee commit message: 'stuff'.
 
-chala clear ga undi mama.
-andariki arthamaindi.`,
+chaala clear gaa undhi mama.
+andhariki arthamaindhi.`,
     emoji: '👏',
   },
   {
     body: `oka date format cheyadaniki
-mudu libraries install cheshava mama?`,
+moodu libraries install cheshava mama?`,
     emoji: '😐',
   },
   {
-    body: `ni 'temporary fix' ki ippudu rendellu mama.
+    body: `nee 'temporary fix' ki ippudu rendellu mama.
 
 Birthday cake kottalemo.`,
     emoji: '🎂',
   },
   {
-    body: `Jira ticket lo description khali,
+    body: `Jira ticket lo description khaali,
 title lo 'fix issue'.
 
-mama, nuvvu ticket rayaledu —
+mama, nuvvu ticket raayaledhu —
 oka riddle pettavu.`,
   },
   {
-    body: `ni config lo oke setting mudu chotla undi mama.
+    body: `nee config lo oke setting moodu chotla undhi mama.
 
-mudu vere values.`,
+moodu vere values.`,
     emoji: '😵',
   },
   {
-    body: `i project ki architecture diagram unda mama?
+    body: `ee project ki architecture diagram undha mama?
 
-undi. ni talalo.
-ade asalu problem.`,
+undhi. nee thalalo.
+adhe asalu problem.`,
   },
   {
-    body: `'idi tarvata refactor cheddam' annavu mama.
+    body: `'idhi tharvatha refactor chedhdham' annavu mama.
 
-a 'tarvata' inka raledu.`,
+aa 'tharvatha' inka raaledhu.`,
   },
   {
-    body: `ni test suite lo okate test — 'it works'.
+    body: `nee test suite lo okate test — 'it works'.
 
-adi okka assert kuda cheyadu mama.`,
+adhi okka assert kooda cheyadhu mama.`,
     emoji: '😂',
   },
   {
-    body: `Meeting lo ayiduguru,
+    body: `Meeting lo ayidhuguru,
 45 nimishalu,
-okka decision kuda ledu.
+okka decision kooda ledhu.
 
-mama, adi meeting kadu — group therapy.`,
+mama, adhi meeting kaadhu — group therapy.`,
   },
   {
-    body: `oka feature rayadaniki
-mundu oka framework rashavu mama.
+    body: `oka feature raayadaniki
+mundhu oka framework raashavu mama.
 
-Feature matram inka raledu.`,
+Feature maathram inka raaledhu.`,
   },
   {
-    body: `ni .env file git lo unda mama? 😨
+    body: `nee .env file git lo undha mama? 😨
 
-sare... idi roast kadu.
-idi warning.`,
+sare... idhi roast kaadhu.
+idhi warning.`,
     footer: 'ippude .gitignore lo pettu. 🙏',
   },
   {
-    body: `Tab crash ayyi ni mudu gantala research poyinda mama?
+    body: `Tab crash ayyi nee moodu gantala research poyindha mama?
 
-Bookmark ane feature okatundi.
-vinnava eppudaina?`,
+Bookmark ane feature okatundhi.
+vinnava yeppudaina?`,
   },
 ];

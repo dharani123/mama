@@ -10,10 +10,10 @@ import type { Message } from './types.js';
  */
 export const coffee: readonly Message[] = [
   {
-    body: `Code artham kavadam leda?
+    body: `Code artham kaavadam ledha?
 
-mundu coffee tagu mama.
-tarvata code ni malli chuddam.`,
+mundhu coffee thaagu mama.
+tharvatha code ni malli choodhdham.`,
   },
   {
     // Meters, so this one reads differently every run.
@@ -26,38 +26,38 @@ ${meter(caffeine)}
 Productivity:
 ${meter(productivity)}
 
-inko coffee avasaram anipistondi mama. 😂`;
+inko coffee avasaram anipisthondhi mama. 😂`;
     },
     raw: true,
     footer: null,
   },
   {
-    body: `Coffee tagakunda code review cheyaku mama.
-evaro okaru badhapadataru.`,
+    body: `Coffee thaagakunda code review cheyaku mama.
+yevaro okaru baadhapadatharu.`,
     emoji: '😄',
   },
   {
-    body: `ni blood lo caffeine kadu mama —
+    body: `nee blood lo caffeine kaadhu mama —
 caffeine lo blood.`,
   },
   {
-    body: `modati coffee: manishivi avutavu.
-rendo coffee: developer avutavu.
-mudo coffee: architect avutavu.
-nalugo coffee: malli modati nunchi mama.`,
+    body: `modhati coffee: manishivi avuthavu.
+rendo coffee: developer avuthavu.
+moodo coffee: architect avuthavu.
+naalugo coffee: malli modhati nunchi mama.`,
   },
   {
-    body: `Coffee challaripoyinda mama?
-ante nuvvu nijanga pani chestunnavani artham.`,
+    body: `Coffee challaripoyindha mama?
+ante nuvvu nijanga pani chesthunnavani artham.`,
   },
   {
-    body: `Bug fix kavadam leda mama?
-Coffee break tisuko.
-sagam bugs kitchen lone fix avutayi.`,
+    body: `Bug fix kaavadam ledha mama?
+Coffee break theesuko.
+sagam bugs kitchen lone fix avuthayi.`,
   },
   {
-    body: `Coffee machine daggara jarige meetings
-conference room kante ekkuva useful mama.`,
+    body: `Coffee machine dhaggara jarige meetings
+conference room kante yekkuva useful mama.`,
     emoji: '😎',
   },
   {
@@ -65,30 +65,30 @@ conference room kante ekkuva useful mama.`,
     body: () => {
       const cups = randomInt(2, 7);
       const bugs = randomInt(1, 9);
-      return `iroju lekka mama:
+      return `eeroju lekka mama:
 
   Coffee  ${'☕'.repeat(cups)}  (${cups})
   Bugs    ${'🐛'.repeat(bugs)}  (${bugs})
 
-${cups >= bugs ? 'nuvve gelichavu. 😎' : 'Bugs mundunnayi. inko coffee pattu. 😅'}`;
+${cups >= bugs ? 'nuvve gelichavu. 😎' : 'Bugs mundhunnayi. inko coffee pattu. 😅'}`;
     },
     raw: true,
     footer: null,
   },
   {
-    body: `idi ni enno coffee mama?
+    body: `idhi nee yenno coffee mama?
 
-...lekka pettadam maneshava?
-sare, inkokati tagu.`,
+...lekka pettadam maaneshava?
+sare, inkokati thaagu.`,
   },
   {
-    body: `Tea vs Coffee godava vaddu mama.
-mukhyam entante — oka break tisuko.`,
+    body: `Tea vs Coffee godava vadhdhu mama.
+mukhyam yentante — oka break theesuko.`,
   },
   {
-    body: `Coffee ayipoyinda mama?
+    body: `Coffee ayipoyindha mama?
 
-ayite iroju code kuda ayipoyinatte.`,
+ayithe eeroju code kooda ayipoyinatte.`,
     emoji: '☕',
   },
 ];

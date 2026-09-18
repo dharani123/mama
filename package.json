@@ -1,7 +1,7 @@
 {
   "name": "dharani-mama",
-  "version": "2.0.0",
-  "description": "ni terminal mama - your Telugu-speaking terminal buddy, in Latin letters so it reads in any terminal.",
+  "version": "2.0.1",
+  "description": "nee terminal mama - your Telugu-speaking terminal buddy, in Latin letters so it reads in any terminal.",
   "keywords": [
     "cli",
     "telugu",
