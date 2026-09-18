@@ -32,16 +32,16 @@ export const QUOTES: Readonly<Record<Category, readonly Message[]>> = {
  * formulaic.
  */
 export const STYLES: Readonly<Record<Category, CategoryStyle>> = {
-  general: { heading: 'మామా', emoji: '❤️', footer: '— నీ టెర్మినల్ మామా 😎' },
-  motivate: { heading: 'మామా', emoji: '🔥', footer: 'లేచి పని మొదలుపెట్టు రా. 💪' },
-  calm: { heading: 'మామా', emoji: '🧘', footer: 'నెమ్మదిగా వెళ్లు. ❤️' },
-  morning: { heading: 'శుభోదయం మామా', emoji: '☀️', footer: 'Have a great day మామా! 💪' },
-  night: { heading: 'మామా', emoji: '🌙', footer: 'శుభరాత్రి ❤️' },
-  code: { heading: 'మామా', emoji: '👨‍💻' },
-  git: { heading: 'మామా', emoji: '🌿' },
-  roast: { heading: 'మామా', emoji: '🔥' },
-  coffee: { heading: 'మామా', emoji: '☕' },
-  friday: { heading: 'మామా', emoji: '🎉' },
+  general: { heading: 'mama', emoji: '❤️', footer: '— ni terminal mama 😎' },
+  motivate: { heading: 'mama', emoji: '🔥', footer: 'lechi pani modalupettu ra. 💪' },
+  calm: { heading: 'mama', emoji: '🧘', footer: 'nemmadiga vellu. ❤️' },
+  morning: { heading: 'shubhodayam mama', emoji: '☀️', footer: 'Have a great day mama! 💪' },
+  night: { heading: 'mama', emoji: '🌙', footer: 'shubharatri ❤️' },
+  code: { heading: 'mama', emoji: '👨‍💻' },
+  git: { heading: 'mama', emoji: '🌿' },
+  roast: { heading: 'mama', emoji: '🔥' },
+  coffee: { heading: 'mama', emoji: '☕' },
+  friday: { heading: 'mama', emoji: '🎉' },
 };
 
 export type { Category, CategoryStyle, Message };

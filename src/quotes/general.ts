@@ -3,105 +3,105 @@ import type { Message } from './types.js';
 /** Everyday wisdom - what `mama` says when you run it with no arguments. */
 export const general: readonly Message[] = [
   {
-    body: `నెమ్మదిగా వెళ్తున్నావని బాధపడకు మామా,
-ఆగిపోలేదుగా... అదే ముఖ్యం.`,
+    body: `nemmadiga veltunnavani badhapadaku mama,
+agipoleduga... ade mukhyam.`,
     emoji: '❤️',
   },
   {
-    body: `చిన్న అడుగు అయినా ముందుకే వేస్తున్నావు మామా.
-అదే చాలు.`,
+    body: `chinna adugu ayina munduke vestunnavu mama.
+ade chalu.`,
     emoji: '🌱',
     footer: 'Keep going ❤️',
   },
   {
-    body: `అందరికీ నచ్చాలని ప్రయత్నించకు మామా.
-నీకు నచ్చే పని చెయ్యి — మిగతాది దానికదే జరుగుతుంది.`,
+    body: `andariki nachchalani prayatninchaku mama.
+niku nachche pani cheyyi — migatadi danikade jarugutundi.`,
   },
   {
-    body: `నిన్న జరిగింది history మామా.
-రేపు జరిగేది mystery.
-ఇవాళ మాత్రం నీ చేతిలో ఉంది.`,
+    body: `ninna jarigindi history mama.
+repu jarigedi mystery.
+ivala matram ni chetilo undi.`,
     emoji: '🌤️',
   },
   {
-    body: `ప్రతిసారీ గెలవాల్సిన అవసరం లేదు మామా.
-ప్రతిసారీ నేర్చుకుంటే చాలు.`,
+    body: `pratisari gelavalsina avasaram ledu mama.
+pratisari nerchukunte chalu.`,
   },
   {
-    body: `నీ speed వేరు, వాళ్ళ speed వేరు మామా.
-ఇది race కాదు — ఇది నీ journey.`,
+    body: `ni speed veru, valla speed veru mama.
+idi race kadu — idi ni journey.`,
     emoji: '🚶',
   },
   {
-    body: `పోల్చుకోవడం మొదలుపెట్టిన రోజే
-సంతోషం ఆగిపోతుంది మామా.`,
+    body: `polchukovadam modalupettina roje
+santosham agipotundi mama.`,
   },
   {
-    body: `ఒక్క రోజు సరిగా లేకపోతే జీవితం చెడిపోలేదు మామా.
-ఒక్క రోజు మాత్రమే.`,
+    body: `okka roju sariga lekapote jivitam chedipoledu mama.
+okka roju matrame.`,
   },
   {
-    body: `అన్ని సమాధానాలు ఇప్పుడే తెలియాల్సిన అవసరం లేదు మామా.
-కొన్ని ప్రశ్నలకు time మాత్రమే జవాబు.`,
+    body: `anni samadhanalu ippude teliyalsina avasaram ledu mama.
+konni prashnalaku time matrame javabu.`,
     emoji: '⏳',
   },
   {
-    body: `నువ్వు ఎంత దూరం వచ్చావో ఒకసారి వెనక్కి చూడు మామా.
-నీకే ఆశ్చర్యం వేస్తుంది.`,
+    body: `nuvvu enta duram vachchavo okasari venakki chudu mama.
+nike ashcharyam vestundi.`,
     footer: 'Keep going ❤️',
   },
   {
-    body: `'తర్వాత చేద్దాం' —
-ప్రపంచంలో అతి పెద్ద అబద్ధం ఇదే మామా.`,
+    body: `'tarvata cheddam' —
+prapanchamlo ati pedda abaddham ide mama.`,
     emoji: '😄',
   },
   {
-    body: `నీ మీద నీకే కోపం వచ్చినప్పుడు ఒకసారి ఆగు మామా.
-నువ్వు నీకు friend, enemy కాదు.`,
+    body: `ni mida nike kopam vachchinappudu okasari agu mama.
+nuvvu niku friend, enemy kadu.`,
   },
   {
-    body: `కష్టం శాశ్వతం కాదు మామా.
-నువ్వు మాత్రం ఇంకా ఇక్కడే ఉన్నావు — అదే proof.`,
+    body: `kashtam shashvatam kadu mama.
+nuvvu matram inka ikkade unnavu — ade proof.`,
     emoji: '💪',
   },
   {
-    body: `ఎవరూ చూడకపోయినా నువ్వు చేసే పని —
-అదే నిన్ను నిర్వచిస్తుంది మామా.`,
+    body: `evaru chudakapoyina nuvvu chese pani —
+ade ninnu nirvachistundi mama.`,
   },
   {
-    body: `అన్నీ plan ప్రకారం జరగవు మామా.
-కానీ plan లేకుండా బయలుదేరితే
-ఎక్కడికి వెళ్ళావో కూడా తెలియదు.`,
+    body: `anni plan prakaram jaragavu mama.
+kani plan lekunda bayaluderite
+ekkadiki vellavo kuda teliyadu.`,
   },
   {
-    body: `ఈరోజు అలసిపోయావంటే
-ఏదో ఒకటి చేశావని అర్థం మామా.`,
+    body: `iroju alasipoyavante
+edo okati cheshavani artham mama.`,
   },
   {
-    body: `సహాయం అడగడం బలహీనత కాదు మామా.
-అది shortcut.`,
+    body: `sahayam adagadam balahinata kadu mama.
+adi shortcut.`,
     emoji: '🤝',
   },
   {
-    body: `ఒక్కటి బాగా చేయడం
-పది పనులు సగంసగం చేయడం కంటే మేలు మామా.`,
+    body: `okkati baga cheyadam
+padi panulu sagam sagam cheyadam kante melu mama.`,
   },
   {
-    body: `నీకు నచ్చని పని రోజూ చేస్తున్నావా మామా?
-ఒక్కసారి ఆలోచించు — ఎందుకు చేస్తున్నావు?`,
+    body: `niku nachchani pani roju chestunnava mama?
+okkasari alochinchu — enduku chestunnavu?`,
   },
   {
-    body: `మనసు నిండా ఆలోచనలుంటే ఒక కాగితం తీసుకో మామా.
-రాసేస్తే సగం భారం తగ్గుతుంది.`,
+    body: `manasu ninda alochanalunte oka kagitam tisuko mama.
+raseste sagam bharam taggutundi.`,
     emoji: '📝',
   },
   {
-    body: `గెలుపు అంటే ఎప్పుడూ పైకి వెళ్ళడం కాదు మామా.
-పడిన ప్రతిసారీ లేవడం.`,
+    body: `gelupu ante eppudu paiki velladam kadu mama.
+padina pratisari levadam.`,
   },
   {
-    body: `నీతో జీవితాంతం ఉండేది నువ్వే మామా.
-కాబట్టి నీకు నువ్వు కొంచెం దయగా ఉండు.`,
+    body: `nito jivitantam undedi nuvve mama.
+kabatti niku nuvvu konchem dayaga undu.`,
     emoji: '❤️',
   },
 ];

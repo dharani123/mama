@@ -1,6 +1,6 @@
 # MAMA CLI 😎
 
-> నీ టెర్మినల్ మామా.
+> ni terminal mama.
 
 MAMA is your Telugu-speaking terminal buddy.
 
@@ -8,7 +8,7 @@ Sometimes you need debugging.
 Sometimes you need motivation.
 Sometimes you just need someone to say:
 
-**"పర్లేదు మామా." ❤️**
+**"parledu mama." ❤️**
 
 ```console
 $ dharani-mama
@@ -21,19 +21,8 @@ mama ❤️
 — ni terminal mama 😎
 ```
 
-Telugu, written the way you'd type it to a friend. If your terminal renders
-Telugu script properly, `--telugu` gives you the real thing:
-
-```console
-$ dharani-mama --telugu
-
-మామా ❤️
-
-"నెమ్మదిగా వెళ్తున్నావని బాధపడకు మామా,
- ఆగిపోలేదుగా... అదే ముఖ్యం."
-
-— నీ టెర్మినల్ మామా 😎
-```
+Telugu, written in Latin letters the way you'd type it to a friend — so it
+reads correctly in any terminal, with no fonts to install.
 
 No network. No telemetry. No dependencies. Just 176 original Telugu messages
 and a friend who lives in your `$PATH`.
@@ -53,7 +42,7 @@ Everything below is the same either way — substitute whichever you have.
 The program itself always prints the name you actually typed, so `--help`
 shows commands you can paste straight back.
 
-| Run | What మామా does |
+| Run | What mama does |
 | --- | --- |
 | *(no arguments)* | Random Telugu wisdom |
 | `motivate` | Motivation — persistence, discipline, getting back up |
@@ -65,7 +54,6 @@ shows commands you can paste straight back.
 | `roast` | Roast your terminal 🔥 |
 | `coffee` | Coffee wisdom ☕ |
 | `friday` | Weekend mode 🎉 |
-| `--telugu` | Telugu script instead of romanised |
 | `--help` | Show help |
 | `--version` | Show version |
 
@@ -146,11 +134,9 @@ sudo apt install ./build/mama_1.1.0-1_all.deb
 ### Requirements
 
 - **Node.js 18 or newer** — that is the only requirement.
-- **A UTF-8 terminal**, for the emoji. Default output is romanised Telugu in
-  plain Latin letters, so no special font is needed.
-- **Only if you want `--telugu`:** a font with Telugu glyphs
-  (`sudo apt install fonts-telugu`) *and* a terminal that can shape complex
-  text. Many cannot, which is why Latin is the default.
+- **A UTF-8 terminal**, for the emoji. Messages are Telugu written in Latin
+  letters, so no Telugu font and no complex-text support is needed — it works
+  in any terminal, over SSH, in tmux, anywhere.
 
 ---
 
@@ -162,64 +148,54 @@ apt, the command is `mama` — everything after it is identical.
 ```console
 $ dharani-mama motivate
 
-మామా 🔥
+mama 📈
 
-"నీకు నువ్వు నమ్మకం పెట్టుకున్న రోజు
- నీ జీవితంలో అసలు turning point మొదలవుతుంది మామా."
+"rojuki okka shatam better ayite
+ samvatsaram tarvata ninnu nuvve gurtupattalevu mama."
 
-లేచి పని మొదలుపెట్టు రా. 💪
+lechi pani modalupettu ra. 💪
 ```
 
 ```console
 $ dharani-mama code
 
-మామా 👨‍💻
+mama 😂
 
-"Bug చూసి భయపడకు మామా...
- Bug కూడా ఎవరో రాసిన code ఏ."
-
-Debug చెయ్యి. 😎
+"Production loki push chese mundu
+ okasari alochinchu mama."
 ```
 
 ```console
 $ dharani-mama roast
 
-మామా 😂
+mama 🔥
 
-"47 Chrome tabs,
- 18 Git branches,
- 3 TODO files...
+"ni CSS lo !important ennisarlu undo lekkapettanu mama.
 
- నువ్వు developer వా
- లేక operating system వా?"
+ adi stylesheet kadu — adi oka argument."
 ```
 
 ```console
 $ dharani-mama coffee
 
-మామా ☕
+mama ☕
 
-Coffee level:
-████████░░ 80%
-
-Productivity:
-████░░░░░░ 40%
-
-ఇంకో coffee అవసరం అనిపిస్తోంది మామా. 😂
+"Tea vs Coffee godava vaddu mama.
+ mukhyam entante — oka break tisuko."
 ```
 
 ```console
 $ dharani-mama something
 
-మామా... 🤔
+mama... 🤔
 
-"something" నాకు ఇంకా తెలియదు.
+"something" naku inka teliyadu.
 
 Try:
   mama --help
 ```
 
-### Put మామా in your shell startup
+### Put mama in your shell startup
 
 ```bash
 echo 'dharani-mama' >> ~/.bashrc   # a friend greets every new terminal
@@ -237,30 +213,8 @@ Or on a schedule, for the 11 PM crowd:
 | --- | --- |
 | `NO_COLOR` | Disable colour entirely ([no-color.org](https://no-color.org)) |
 | `FORCE_COLOR` | Keep colour even when output is piped |
-| `MAMA_TELUGU` | Use Telugu script by default (same as always passing `--telugu`) |
 | `MAMA_SEED` | Fix the random seed — the same seed always gives the same message |
 | `MAMA_DEBUG` | Show real stack traces instead of a friendly Telugu apology |
-
-### Script
-
-MAMA prints romanised Telugu by default — `parledu mama` rather than
-`పర్లేదు మామా`. Most terminal emulators cannot shape Telugu script correctly,
-because conjuncts and vowel marks need complex-text layout that a fixed
-character grid does not do; you get boxes or misplaced marks even with Telugu
-fonts installed. A message you can't read is worse than one in the wrong
-script.
-
-If your terminal does handle it, you lose nothing:
-
-```bash
-mama --telugu              # Telugu for one run
-export MAMA_TELUGU=1       # Telugu from now on
-mama --roman               # back to Latin for one run
-```
-
-The romanisation is generated from the Telugu by rule, so there is only ever
-one copy of each message to write and the two can never drift apart. Add a
-quote in Telugu and both forms work.
 
 Colour is off automatically when output is not a terminal, so `mama | cat`
 and `mama > motivation.txt` stay clean. Only cyan, yellow and dim are used,
@@ -337,10 +291,10 @@ Open the right file in `src/quotes/` and add an entry:
 
 ```ts
 {
-  body: `Code review లో comments ఎక్కువ వచ్చాయా మామా?
-అంటే ఎవరో నీ code ని నిజంగా చదివారని అర్థం.`,
+  body: `Code review lo comments ekkuva vachchaya mama?
+ante evaro ni code ni nijanga chadivarani artham.`,
   emoji: '😄',            // optional, overrides the category default
-  footer: 'సంతోషించు.',   // optional; `null` means no sign-off
+  footer: 'santoshinchu.', // optional; `null` means no sign-off
 },
 ```
 
@@ -349,10 +303,16 @@ every message renders, and that no line is too wide for an 80-column terminal.
 
 **Style guide for quotes**
 
-- Telugu first, with developer English left in English — `code`, `bug`,
-  `commit`, `push`, `branch`, `production`, `deploy`, `coffee`, `terminal`.
-  Don't translate technical words just because you can.
-- Say మామా naturally, the way you'd actually say it. Don't force it.
+- **Write Telugu in Latin letters, not Telugu script** — `parledu mama`.
+  Terminals cannot shape Telugu script reliably, so the whole corpus is
+  romanised; a quote in Telugu script would be unreadable for most people
+  running this, and CI will reject it.
+- Spell it the way you'd type it to a friend: no diacritics, no doubled long
+  vowels. `baga`, not `baagaa`.
+- Developer English stays English — `code`, `bug`, `commit`, `push`, `branch`,
+  `production`, `deploy`, `coffee`, `terminal`. Don't translate technical
+  words just because you can.
+- Say mama naturally, the way you'd actually say it. Don't force it.
 - Keep it short. Four lines is usually plenty.
 - Emojis: one or two. This is a terminal, not a group chat.
 - Roasts target **code, habits and terminal chaos** — never a person's
@@ -382,4 +342,4 @@ another language, open an issue first so we can agree on the layout.
 
 ## License
 
-[MIT](LICENSE) — do whatever you like, మామా. 🙂
+[MIT](LICENSE) — do whatever you like, mama. 🙂

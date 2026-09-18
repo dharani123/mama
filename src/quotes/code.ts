@@ -3,111 +3,111 @@ import type { Message } from './types.js';
 /** Developer wisdom, mostly with a grin - `mama code`. */
 export const code: readonly Message[] = [
   {
-    body: `Bug చూసి భయపడకు మామా...
-Bug కూడా ఎవరో రాసిన code ఏ.`,
-    footer: 'Debug చెయ్యి. 😎',
+    body: `Bug chusi bhayapadaku mama...
+Bug kuda evaro rasina code e.`,
+    footer: 'Debug cheyyi. 😎',
   },
   {
-    body: `Code పని చేయకపోతే ముందు
-computer ని తిట్టకు మామా...
+    body: `Code pani cheyakapote mundu
+computer ni tittaku mama...
 
-నువ్వు రాసిందే కదా.`,
+nuvvu rasinde kada.`,
     emoji: '😂',
   },
   {
-    body: `'నా machine లో పని చేస్తోంది' అనేది
-solution కాదు మామా.
-అది alibi.`,
+    body: `'na machine lo pani chestondi' anedi
+solution kadu mama.
+adi alibi.`,
     emoji: '😄',
   },
   {
-    body: `Comment రాయకపోతే ఆరు నెలల తర్వాత
-నీ code నీకే కొత్తగా ఉంటుంది మామా.`,
+    body: `Comment rayakapote aru nelala tarvata
+ni code nike kottaga untundi mama.`,
   },
   {
-    body: `Production లోకి push చేసే ముందు
-ఒకసారి ఆలోచించు మామా.`,
+    body: `Production loki push chese mundu
+okasari alochinchu mama.`,
     emoji: '😂',
   },
   {
-    body: `Stack Overflow నుంచి copy చేసిన code పని చేస్తే
-ఆనందించు మామా.
-ఎందుకు పని చేస్తుందో మాత్రం అడగకు.`,
+    body: `Stack Overflow nunchi copy chesina code pani cheste
+anandinchu mama.
+enduku pani chestundo matram adagaku.`,
   },
   {
-    body: `'Requirement మారదు' అన్నారా మామా?
+    body: `'Requirement maradu' annara mama?
 
-అది joke. నవ్వు.`,
+adi joke. navvu.`,
     emoji: '😅',
   },
   {
-    body: `AI code రాసిందని సంతోషపడకు మామా.
-Production లో pager మోగితే లేచేది నువ్వే.`,
+    body: `AI code rasindani santoshapadaku mama.
+Production lo pager mogite lechedi nuvve.`,
     emoji: '🤖',
   },
   {
-    body: `Technical debt వడ్డీతో సహా తిరిగి వస్తుంది మామా.
-అదీ ఎప్పుడూ worst time లోనే.`,
+    body: `Technical debt vaddito saha tirigi vastundi mama.
+adi eppudu worst time lone.`,
   },
   {
-    body: `Code review లో comments ఎక్కువ వచ్చాయా మామా?
-అంటే ఎవరో నీ code ని నిజంగా చదివారని అర్థం.
-సంతోషించు.`,
+    body: `Code review lo comments ekkuva vachchaya mama?
+ante evaro ni code ni nijanga chadivarani artham.
+santoshinchu.`,
   },
   {
-    body: `'Test రాయడం waste of time' అనుకున్నావా మామా?
-రాత్రి రెండింటికి production call వస్తుంది —
-అప్పుడు మాట్లాడుకుందాం.`,
+    body: `'Test rayadam waste of time' anukunnava mama?
+ratri rendintiki production call vastundi —
+appudu matladukundam.`,
   },
   {
-    body: `సగం bugs typo వల్లే వస్తాయి మామా.
-ముందు ఒకసారి spelling చూడు.`,
+    body: `sagam bugs typo valle vastayi mama.
+mundu okasari spelling chudu.`,
   },
   {
-    body: `Meeting invite లో 'quick sync' అంటే
-కనీసం 45 నిమిషాలు మామా.`,
+    body: `Meeting invite lo 'quick sync' ante
+kanisam 45 nimishalu mama.`,
     emoji: '😩',
   },
   {
-    body: `Code ని simple గా రాయి మామా.
-రేపు దాన్ని maintain చేసేవాడు
-కోపంగా ఉన్న నువ్వే కావచ్చు.`,
+    body: `Code ni simple ga rayi mama.
+repu danni maintain chesevadu
+kopanga unna nuvve kavachchu.`,
   },
   {
-    body: `Estimate ఇచ్చేటప్పుడు రెండింతలు చెయ్యి మామా.
-అప్పుడు కూడా సరిపోదు.`,
+    body: `Estimate ichchetappudu rendintalu cheyyi mama.
+appudu kuda saripodu.`,
   },
   {
-    body: `Error message ని పూర్తిగా చదువు మామా.
-అది నిన్ను తిట్టడం లేదు — దారి చూపిస్తోంది.`,
+    body: `Error message ni purtiga chaduvu mama.
+adi ninnu tittadam ledu — dari chupistondi.`,
   },
   {
-    body: `'Refactor చేద్దాం' అనుకున్న file ని
-చివరికి ఎవరూ ముట్టుకోరు మామా.`,
+    body: `'Refactor cheddam' anukunna file ni
+chivariki evaru muttukoru mama.`,
     emoji: '😂',
   },
   {
-    body: `Documentation ఎవరూ చదవరు అంటారు మామా.
-కానీ లేనప్పుడు మాత్రం అందరూ అడుగుతారు.`,
+    body: `Documentation evaru chadavaru antaru mama.
+kani lenappudu matram andaru adugutaru.`,
   },
   {
-    body: `'ఇది చిన్న change మామా' —
-చాలా outage లు ఈ మాటతోనే మొదలయ్యాయి.`,
+    body: `'idi chinna change mama' —
+chala outage lu i matatone modalayyayi.`,
     emoji: '🔥',
   },
   {
-    body: `Break తీసుకున్న తర్వాత చూస్తే
-ఆ bug పది నిమిషాల్లో దొరుకుతుంది మామా.
-నమ్మకపోతే try చెయ్యి.`,
+    body: `Break tisukunna tarvata chuste
+a bug padi nimishallo dorukutundi mama.
+nammakapote try cheyyi.`,
   },
   {
-    body: `Code రాయడం కంటే
-సమస్యను అర్థం చేసుకోవడానికే ఎక్కువ time పెట్టు మామా.`,
+    body: `Code rayadam kante
+samasyanu artham chesukovadanike ekkuva time pettu mama.`,
   },
   {
-    body: `Legacy code అంటే మామా —
-పని చేస్తోంది, ఎందుకో ఎవరికీ తెలియదు,
-ముట్టుకోవడానికి అందరూ భయపడతారు.`,
+    body: `Legacy code ante mama —
+pani chestondi, enduko evariki teliyadu,
+muttukovadaniki andaru bhayapadataru.`,
     emoji: '🏛️',
   },
 ];

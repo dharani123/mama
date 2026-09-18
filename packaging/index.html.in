@@ -62,16 +62,16 @@
 <body>
 <main>
   <h1>MAMA CLI</h1>
-  <p class="tagline">నీ టెర్మినల్ మామా — your Telugu-speaking terminal buddy.</p>
+  <p class="tagline">ni terminal mama — your Telugu-speaking terminal buddy.</p>
 
   <div class="sample">$ mama
 
-మామా ❤️
+mama ❤️
 
-"నెమ్మదిగా వెళ్తున్నావని బాధపడకు మామా,
- ఆగిపోలేదుగా... అదే ముఖ్యం."
+"nemmadiga veltunnavani badhapadaku mama,
+ agipoleduga... ade mukhyam."
 
-— నీ టెర్మినల్ మామా 😎</div>
+— ni terminal mama 😎</div>
 
   <h2>Install on Debian or Ubuntu</h2>
   <p>Add the repository once:</p>
@@ -104,8 +104,9 @@ man mama          # the full manual</code></pre>
   <h2>Requirements</h2>
   <ul>
     <li><strong>Node.js 18+</strong> — apt installs the <code>nodejs</code> package for you.</li>
-    <li><strong>A UTF-8 terminal with Telugu glyphs.</strong> If you see boxes
-      instead of letters, install <code>fonts-telugu</code>.</li>
+    <li><strong>A UTF-8 terminal</strong>, for the emoji. Messages are Telugu
+      written in Latin letters, so there is no font to install and nothing to
+      configure.</li>
   </ul>
 
   <h2>Without the repository</h2>

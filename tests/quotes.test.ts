@@ -71,18 +71,18 @@ describe('quote collections', () => {
     }
   });
 
-  it('says "మామా" in every general message', () => {
+  it('says "mama" in every general message', () => {
     for (const message of QUOTES.general) {
-      assert.match(bodyOf(message), /మామా/);
+      assert.match(bodyOf(message), /\bmama\b/);
     }
   });
 
-  it('says "మామా" in at least 80% of all messages', () => {
+  it('says "mama" in at least 80% of all messages', () => {
     const all = categories.flatMap((c) => QUOTES[c]);
-    const withMama = all.filter((m) => bodyOf(m).includes('మామా')).length;
+    const withMama = all.filter((m) => /\bmama\b/.test(bodyOf(m))).length;
     assert.ok(
       withMama / all.length >= 0.8,
-      `only ${withMama}/${all.length} mention మామా`,
+      `only ${withMama}/${all.length} mention mama`,
     );
   });
 });
@@ -91,33 +91,33 @@ describe('formatting', () => {
   it('renders heading, quoted body and footer', () => {
     const output = formatMessage(
       { body: 'line one\nline two' },
-      { heading: 'మామా', emoji: '❤️', footer: 'bye' },
+      { heading: 'mama', emoji: '❤️', footer: 'bye' },
     );
-    assert.equal(output, 'మామా ❤️\n\n"line one\n line two"\n\nbye');
+    assert.equal(output, 'mama ❤️\n\n"line one\n line two"\n\nbye');
   });
 
   it('lets a message override the emoji and footer', () => {
     const output = formatMessage(
       { body: 'hi', emoji: '🔥', footer: 'custom' },
-      { heading: 'మామా', emoji: '❤️', footer: 'default' },
+      { heading: 'mama', emoji: '❤️', footer: 'default' },
     );
-    assert.equal(output, 'మామా 🔥\n\n"hi"\n\ncustom');
+    assert.equal(output, 'mama 🔥\n\n"hi"\n\ncustom');
   });
 
   it('omits the footer when a message sets it to null', () => {
     const output = formatMessage(
       { body: 'hi', footer: null },
-      { heading: 'మామా', emoji: '❤️', footer: 'default' },
+      { heading: 'mama', emoji: '❤️', footer: 'default' },
     );
-    assert.equal(output, 'మామా ❤️\n\n"hi"');
+    assert.equal(output, 'mama ❤️\n\n"hi"');
   });
 
   it('prints raw bodies without quotation marks', () => {
     const output = formatMessage(
       { body: 'a\nb', raw: true, footer: null },
-      { heading: 'మామా', emoji: '☕' },
+      { heading: 'mama', emoji: '☕' },
     );
-    assert.equal(output, 'మామా ☕\n\na\nb');
+    assert.equal(output, 'mama ☕\n\na\nb');
   });
 
   it('renders every shipped message without throwing', () => {
@@ -146,6 +146,16 @@ describe('safety', () => {
       return entry.name.endsWith('.ts') ? [full] : [];
     });
   }
+
+  it('has no Telugu script anywhere in the source', () => {
+    // Messages are Telugu written in Latin letters. Telugu script does not
+    // survive a terminal grid, so a quote in it would be unreadable for most
+    // people running this - fail the build rather than ship it.
+    const telugu = /[\u0C00-\u0C7F]/;
+    for (const file of sourceFiles(srcDir)) {
+      assert.doesNotMatch(readFileSync(file, 'utf8'), telugu, `${file} contains Telugu script`);
+    }
+  });
 
   it('never imports a way to execute shell commands', () => {
     // A quote may contain text like `git commit -m "mama said so"`, so the

@@ -17,8 +17,6 @@ function usageRows(programName: string): [string, string][] {
 export function renderHelp(programName: string): string {
   const rows = usageRows(programName);
   const options: [string, string][] = [
-    ['--telugu', 'Show messages in Telugu script'],
-    ['--roman', 'Show messages in Latin script (default)'],
     ['--help, -h', 'Show this help'],
     ['--version, -v', 'Show version'],
   ];
@@ -32,7 +30,7 @@ export function renderHelp(programName: string): string {
   return [
     accent('MAMA CLI 😎'),
     '',
-    'నీ టెర్మినల్ మామా.',
+    'ni terminal mama.',
     '',
     bold('Usage:'),
     ...rows.map(row),
@@ -40,7 +38,7 @@ export function renderHelp(programName: string): string {
     bold('Options:'),
     ...options.map(row),
     '',
-    dim('MAMA ఎప్పుడూ నీ మాట వింటుంది మామా — కానీ ఏ command నీ తరఫున run చేయదు. 🙂'),
+    dim('MAMA eppudu ni mata vintundi mama — kani e command ni taraphuna run cheyadu. 🙂'),
   ].join('\n');
 }
 
@@ -51,9 +49,9 @@ export function renderVersion(programName: string): string {
 /** The friendly "I don't know that one yet" reply. */
 export function renderUnknown(input: string, programName: string): string {
   return [
-    accent('మామా... 🤔'),
+    accent('mama... 🤔'),
     '',
-    `"${input}" నాకు ఇంకా తెలియదు.`,
+    `"${input}" naku inka teliyadu.`,
     '',
     'Try:',
     `  ${programName} --help`,

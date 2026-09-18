@@ -7,79 +7,79 @@ import type { Message } from './types.js';
  */
 export const calm: readonly Message[] = [
   {
-    body: `అన్నీ ఇప్పుడే solve చేయాల్సిన అవసరం లేదు మామా.
+    body: `anni ippude solve cheyalsina avasaram ledhu mama.
 
-ఒక్కసారి ఊపిరి పీల్చు...
-ఒక్క పని మీద focus పెట్టు.`,
-    footer: 'నెమ్మదిగా వెళ్లు. ❤️',
+okkasari upiri pilchu...
+okka pani mida focus pettu.`,
+    footer: 'nemmadiga vellu. ❤️',
   },
   {
-    body: `టెన్షన్ పడకు మామా.
-ఇది కూడా గడిచిపోతుంది.`,
+    body: `tension padaku mama.
+idi kuda gadichipotundi.`,
   },
   {
-    body: `ఒక్క నిమిషం laptop మూసేసి
-కిటికీ బయటకు చూడు మామా.
-ప్రపంచం ఇంకా అక్కడే ఉంది.`,
+    body: `okka nimisham laptop musesi
+kitiki bayataku chudu mama.
+prapancham inka akkade undi.`,
     emoji: '🪟',
   },
   {
-    body: `నీ చేతిలో లేని వాటి గురించి
-ఆలోచించి ఏం లాభం మామా?`,
+    body: `ni chetilo leni vati gurinchi
+alochinchi em labham mama?`,
   },
   {
-    body: `అన్నీ ఒకేసారి చేయాలనుకుంటే ఏదీ కాదు మామా.
-ముందు ఒక్కటి. తర్వాత ఇంకోటి.`,
+    body: `anni okesari cheyalanukunte edi kadu mama.
+mundu okkati. tarvata inkoti.`,
   },
   {
-    body: `Deep breath తీసుకో మామా.
+    body: `Deep breath tisuko mama.
 
-లోపలికి... నాలుగు.
-ఆగు... నాలుగు.
-బయటకు... ఆరు.
+lopaliki... nalugu.
+agu... nalugu.
+bayataku... aru.
 
-మళ్ళీ ఒకసారి.`,
+malli okasari.`,
     emoji: '🌬️',
   },
   {
-    body: `నీ brain కి కూడా restart కావాలి మామా.
-పది నిమిషాలు walk వెళ్ళిరా.`,
+    body: `ni brain ki kuda restart kavali mama.
+padi nimishalu walk vellira.`,
   },
   {
-    body: `ఇప్పుడు అనిపించేంత పెద్ద problem కాదు మామా.
-రేపు ఉదయం మళ్ళీ ఒకసారి చూడు.`,
+    body: `ippudu anipinchenta pedda problem kadu mama.
+repu udayam malli okasari chudu.`,
   },
   {
-    body: `అన్నిటికీ నువ్వే బాధ్యత తీసుకోవాల్సిన అవసరం లేదు మామా.`,
+    body: `annitiki nuvve badhyata tisukovalsina avasaram ledu mama.`,
   },
   {
-    body: `పని ఎప్పటికీ అయిపోదు మామా.
-కానీ నువ్వు అలసిపోతావు.
-అందుకే break తీసుకోవడం కూడా పనిలో భాగమే.`,
+    body: `pani eppatiki ayipodu mama.
+kani nuvvu alasipotavu.
+anduke break tisukovadam kuda panilo bhagame.`,
   },
   {
-    body: `ఆలోచనలు ఎక్కువైతే ఒక list రాయి మామా.
-తలలో ఉన్నంతసేపే అవి పెద్దగా కనిపిస్తాయి.`,
+    body: `alochanalu ekkuvaite oka list rayi mama.
+talalo unnantasepe avi peddaga kanipistayi.`,
     emoji: '📝',
   },
   {
-    body: `నీకు ఇప్పుడు కావాల్సింది ఇంకో solution కాదు మామా.
-కొంచెం నిద్ర.`,
+    body: `niku ippudu kavalsindi inko solution kadu mama.
+konchem nidra.`,
   },
   {
-    body: `అందరూ బాగానే ఉన్నారని అనుకోకు మామా.
-ప్రతి ఒక్కరికీ ఒక కష్టం ఉంటుంది —
-నీది మాత్రమే నీకు కనిపిస్తుంది.`,
+    body: `andaru bagane unnarani anukoku mama.
+prati okkariki oka kashtam untundi —
+nidi matrame niku kanipistundi.`,
   },
   {
-    body: `నెమ్మదిగా వెళ్ళడం ఆగిపోవడం కాదు మామా.`,
+    body: `nemmadiga velladam agipovadam kadu mama.`,
   },
   {
-    body: `ఈ క్షణంలో ఏం బాగుందో ఒక్కటి చెప్పు మామా.
-ఒక్కటి చాలు.`,
+    body: `i kshanamlo em bagundo okkati cheppu mama.
+okkati chalu.`,
   },
   {
-    body: `కంగారు పడితే పని వేగంగా జరగదు మామా.
-ప్రశాంతంగా ఉంటేనే జరుగుతుంది.`,
+    body: `kangaru padite pani veganga jaragadu mama.
+prashantanga untene jarugutundi.`,
   },
 ];

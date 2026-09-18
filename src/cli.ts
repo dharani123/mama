@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { DEFAULT_PROGRAM_NAME, DEFAULT_SCRIPT, run, type Script } from './run.js';
+import { DEFAULT_PROGRAM_NAME, run } from './run.js';
 
 /**
  * Work out what the user actually typed.
@@ -17,19 +17,10 @@ function programName(): string {
   return base === '' || base === 'cli.js' ? DEFAULT_PROGRAM_NAME : base;
 }
 
-/**
- * Terminals that do shape Telugu properly deserve Telugu. Setting MAMA_TELUGU
- * makes that the default so those users need not pass --telugu every time;
- * --roman still overrides it for a single run.
- */
-function defaultScript(): Script {
-  return process.env['MAMA_TELUGU'] !== undefined ? 'telugu' : DEFAULT_SCRIPT;
-}
-
 /** Entry point. Keeps stack traces away from people who just wanted a joke. */
 function main(): void {
   try {
-    const result = run(process.argv.slice(2), programName(), defaultScript());
+    const result = run(process.argv.slice(2), programName());
     if (result.stdout !== '') process.stdout.write(`${result.stdout}\n`);
     if (result.stderr !== '') process.stderr.write(`${result.stderr}\n`);
     process.exitCode = result.exitCode;
@@ -38,7 +29,7 @@ function main(): void {
     if (process.env['MAMA_DEBUG'] !== undefined) {
       throw error;
     }
-    process.stderr.write('మామా... ఏదో తేడా కొట్టింది. 😅\nMAMA_DEBUG=1 పెట్టి మళ్ళీ try చెయ్యి.\n');
+    process.stderr.write('mama... edo teda kottindi. 😅\nMAMA_DEBUG=1 petti malli try cheyyi.\n');
     process.exitCode = 1;
   }
 }

@@ -10,10 +10,10 @@ import type { Message } from './types.js';
  */
 export const coffee: readonly Message[] = [
   {
-    body: `Code అర్థం కావడం లేదా?
+    body: `Code artham kavadam leda?
 
-ముందు coffee తాగు మామా.
-తర్వాత code ని మళ్ళీ చూద్దాం.`,
+mundu coffee tagu mama.
+tarvata code ni malli chuddam.`,
   },
   {
     // Meters, so this one reads differently every run.
@@ -26,38 +26,38 @@ ${meter(caffeine)}
 Productivity:
 ${meter(productivity)}
 
-ఇంకో coffee అవసరం అనిపిస్తోంది మామా. 😂`;
+inko coffee avasaram anipistondi mama. 😂`;
     },
     raw: true,
     footer: null,
   },
   {
-    body: `Coffee తాగకుండా code review చేయకు మామా.
-ఎవరో ఒకరు బాధపడతారు.`,
+    body: `Coffee tagakunda code review cheyaku mama.
+evaro okaru badhapadataru.`,
     emoji: '😄',
   },
   {
-    body: `నీ blood లో caffeine కాదు మామా —
-caffeine లో blood.`,
+    body: `ni blood lo caffeine kadu mama —
+caffeine lo blood.`,
   },
   {
-    body: `మొదటి coffee: మనిషివి అవుతావు.
-రెండో coffee: developer అవుతావు.
-మూడో coffee: architect అవుతావు.
-నాలుగో coffee: మళ్ళీ మొదటి నుంచి మామా.`,
+    body: `modati coffee: manishivi avutavu.
+rendo coffee: developer avutavu.
+mudo coffee: architect avutavu.
+nalugo coffee: malli modati nunchi mama.`,
   },
   {
-    body: `Coffee చల్లారిపోయిందా మామా?
-అంటే నువ్వు నిజంగా పని చేస్తున్నావని అర్థం.`,
+    body: `Coffee challaripoyinda mama?
+ante nuvvu nijanga pani chestunnavani artham.`,
   },
   {
-    body: `Bug fix కావడం లేదా మామా?
-Coffee break తీసుకో.
-సగం bugs kitchen లోనే fix అవుతాయి.`,
+    body: `Bug fix kavadam leda mama?
+Coffee break tisuko.
+sagam bugs kitchen lone fix avutayi.`,
   },
   {
-    body: `Coffee machine దగ్గర జరిగే meetings
-conference room కంటే ఎక్కువ useful మామా.`,
+    body: `Coffee machine daggara jarige meetings
+conference room kante ekkuva useful mama.`,
     emoji: '😎',
   },
   {
@@ -65,30 +65,30 @@ conference room కంటే ఎక్కువ useful మామా.`,
     body: () => {
       const cups = randomInt(2, 7);
       const bugs = randomInt(1, 9);
-      return `ఈరోజు లెక్క మామా:
+      return `iroju lekka mama:
 
   Coffee  ${'☕'.repeat(cups)}  (${cups})
   Bugs    ${'🐛'.repeat(bugs)}  (${bugs})
 
-${cups >= bugs ? 'నువ్వే గెలిచావు. 😎' : 'Bugs ముందున్నాయి. ఇంకో coffee పట్టు. 😅'}`;
+${cups >= bugs ? 'nuvve gelichavu. 😎' : 'Bugs mundunnayi. inko coffee pattu. 😅'}`;
     },
     raw: true,
     footer: null,
   },
   {
-    body: `ఇది నీ ఎన్నో coffee మామా?
+    body: `idi ni enno coffee mama?
 
-...లెక్క పెట్టడం మానేశావా?
-సరే, ఇంకొకటి తాగు.`,
+...lekka pettadam maneshava?
+sare, inkokati tagu.`,
   },
   {
-    body: `Tea vs Coffee గొడవ వద్దు మామా.
-ముఖ్యం ఏంటంటే — ఒక break తీసుకో.`,
+    body: `Tea vs Coffee godava vaddu mama.
+mukhyam entante — oka break tisuko.`,
   },
   {
-    body: `Coffee అయిపోయిందా మామా?
+    body: `Coffee ayipoyinda mama?
 
-అయితే ఈరోజు code కూడా అయిపోయినట్టే.`,
+ayite iroju code kuda ayipoyinatte.`,
     emoji: '☕',
   },
 ];

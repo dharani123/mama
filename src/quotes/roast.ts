@@ -9,9 +9,9 @@ import type { Message } from './types.js';
  */
 export const roast: readonly Message[] = [
   {
-    body: `నీ code చూసాను మామా...
+    body: `ni code chusanu mama...
 
-ఇది code review కాదు,
+idi code review kadu,
 archaeological excavation.`,
     footer: '💀',
   },
@@ -20,14 +20,14 @@ archaeological excavation.`,
 18 Git branches,
 3 TODO files...
 
-నువ్వు developer వా
-లేక operating system వా?`,
+nuvvu developer va
+leka operating system va?`,
     emoji: '😂',
   },
   {
-    body: `నీ function 400 lines ఉంది మామా.
+    body: `ni function 400 lines undi mama.
 
-అది function కాదు — అది ఒక novel.
+adi function kadu — adi oka novel.
 Chapter 1: imports.`,
   },
   {
@@ -35,119 +35,119 @@ Chapter 1: imports.`,
 console.log('here2')
 console.log('WHY')
 
-మామా, ఇది debugging కాదు —
-ఇది ఒక emotional journey.`,
+mama, idi debugging kadu —
+idi oka emotional journey.`,
     emoji: '😭',
   },
   {
-    body: `నీ CSS లో !important ఎన్నిసార్లు ఉందో లెక్కపెట్టాను మామా.
+    body: `ni CSS lo !important ennisarlu undo lekkapettanu mama.
 
-అది stylesheet కాదు — అది ఒక argument.`,
+adi stylesheet kadu — adi oka argument.`,
   },
   {
-    body: `node_modules size ఒకసారి చూశావా మామా?
+    body: `node_modules size okasari chushava mama?
 
-నీ project: 200 lines.
+ni project: 200 lines.
 Dependencies: 200 MB.`,
     emoji: '📦',
   },
   {
-    body: `Friday సాయంత్రం deploy చేస్తున్నావా మామా?
+    body: `Friday sayantram deploy chestunnava mama?
 
-ధైర్యం అంటే ఇదే.
-తెలివి మాత్రం కాదు.`,
+dhairyam ante ide.
+telivi matram kadu.`,
   },
   {
-    body: `నీ TODO comment 2019 నుంచి అక్కడే ఉంది మామా.
+    body: `ni TODO comment 2019 nunchi akkade undi mama.
 
-అది TODO కాదు — అది ఒక memorial.`,
+adi TODO kadu — adi oka memorial.`,
   },
   {
-    body: `నీ variable పేర్లు:
+    body: `ni variable perlu:
 data, data2, finalData, finalData2.
 
-మామా, నువ్వు code రాయలేదు —
-ఒక puzzle సృష్టించావు.`,
+mama, nuvvu code rayaledu —
+oka puzzle srushtinchavu.`,
     emoji: '🧩',
   },
   {
-    body: `Callback లోపల callback,
-దాని లోపల ఇంకో callback...
+    body: `Callback lopala callback,
+dani lopala inko callback...
 
-మామా ఇది code కాదు — ఇది Inception.`,
+mama idi code kadu — idi Inception.`,
   },
   {
-    body: `నీ commit message: 'stuff'.
+    body: `ni commit message: 'stuff'.
 
-చాలా clear గా ఉంది మామా.
-అందరికీ అర్థమైంది.`,
+chala clear ga undi mama.
+andariki arthamaindi.`,
     emoji: '👏',
   },
   {
-    body: `ఒక date format చేయడానికి
-మూడు libraries install చేశావా మామా?`,
+    body: `oka date format cheyadaniki
+mudu libraries install cheshava mama?`,
     emoji: '😐',
   },
   {
-    body: `నీ 'temporary fix' కి ఇప్పుడు రెండేళ్ళు మామా.
+    body: `ni 'temporary fix' ki ippudu rendellu mama.
 
-Birthday cake కొట్టాలేమో.`,
+Birthday cake kottalemo.`,
     emoji: '🎂',
   },
   {
-    body: `Jira ticket లో description ఖాళీ,
-title లో 'fix issue'.
+    body: `Jira ticket lo description khali,
+title lo 'fix issue'.
 
-మామా, నువ్వు ticket రాయలేదు —
-ఒక riddle పెట్టావు.`,
+mama, nuvvu ticket rayaledu —
+oka riddle pettavu.`,
   },
   {
-    body: `నీ config లో ఒకే setting మూడు చోట్ల ఉంది మామా.
+    body: `ni config lo oke setting mudu chotla undi mama.
 
-మూడూ వేరే values.`,
+mudu vere values.`,
     emoji: '😵',
   },
   {
-    body: `ఈ project కి architecture diagram ఉందా మామా?
+    body: `i project ki architecture diagram unda mama?
 
-ఉంది. నీ తలలో.
-అదే అసలు problem.`,
+undi. ni talalo.
+ade asalu problem.`,
   },
   {
-    body: `'ఇది తర్వాత refactor చేద్దాం' అన్నావు మామా.
+    body: `'idi tarvata refactor cheddam' annavu mama.
 
-ఆ 'తర్వాత' ఇంకా రాలేదు.`,
+a 'tarvata' inka raledu.`,
   },
   {
-    body: `నీ test suite లో ఒకటే test — 'it works'.
+    body: `ni test suite lo okate test — 'it works'.
 
-అది ఒక్క assert కూడా చేయదు మామా.`,
+adi okka assert kuda cheyadu mama.`,
     emoji: '😂',
   },
   {
-    body: `Meeting లో అయిదుగురు,
-45 నిమిషాలు,
-ఒక్క decision కూడా లేదు.
+    body: `Meeting lo ayiduguru,
+45 nimishalu,
+okka decision kuda ledu.
 
-మామా, అది meeting కాదు — group therapy.`,
+mama, adi meeting kadu — group therapy.`,
   },
   {
-    body: `ఒక feature రాయడానికి
-ముందు ఒక framework రాశావు మామా.
+    body: `oka feature rayadaniki
+mundu oka framework rashavu mama.
 
-Feature మాత్రం ఇంకా రాలేదు.`,
+Feature matram inka raledu.`,
   },
   {
-    body: `నీ .env file git లో ఉందా మామా? 😨
+    body: `ni .env file git lo unda mama? 😨
 
-సరే... ఇది roast కాదు.
-ఇది warning.`,
-    footer: 'ఇప్పుడే .gitignore లో పెట్టు. 🙏',
+sare... idi roast kadu.
+idi warning.`,
+    footer: 'ippude .gitignore lo pettu. 🙏',
   },
   {
-    body: `Tab crash అయ్యి నీ మూడు గంటల research పోయిందా మామా?
+    body: `Tab crash ayyi ni mudu gantala research poyinda mama?
 
-Bookmark అనే feature ఒకటుంది.
-విన్నావా ఎప్పుడైనా?`,
+Bookmark ane feature okatundi.
+vinnava eppudaina?`,
   },
 ];

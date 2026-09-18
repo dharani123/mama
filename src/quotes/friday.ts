@@ -8,61 +8,61 @@ import type { Message } from './types.js';
  */
 export const friday: readonly Message[] = [
   {
-    body: `ఇంకొంచెం ఓపిక మామా...
+    body: `inkonchem opika mama...
 
-ఈరోజు Friday.
+iroju Friday.
 
-Weekend నీ కోసం ఎదురుచూస్తుంది.`,
+Weekend ni kosam eduruchustundi.`,
     footer: '😎',
   },
   {
-    body: `Friday సాయంత్రం production లోకి deploy వద్దు మామా.
+    body: `Friday sayantram production loki deploy vaddu mama.
 
-Weekend ని weekend గానే ఉంచు.`,
+Weekend ni weekend gane unchu.`,
     emoji: '🙏',
   },
   {
-    body: `వారమంతా కష్టపడ్డావు మామా.
-ఈ రెండు రోజులు నీవి.`,
+    body: `varamanta kashtapaddavu mama.
+i rendu rojulu nivi.`,
   },
   {
-    body: `Friday నాటికి అన్నీ పూర్తి కావాలని రూల్ ఏమీ లేదు మామా.
-సోమవారం కూడా ఒక రోజే.`,
+    body: `Friday natiki anni purti kavalani rul emi ledu mama.
+somavaram kuda oka roje.`,
   },
   {
-    body: `Weekend plan ఏంటి మామా?
+    body: `Weekend plan enti mama?
 
-'Code చేస్తా' అంటే మాత్రం ఒప్పుకోను.`,
+'Code chesta' ante matram oppukonu.`,
   },
   {
-    body: `Friday నాడు meeting పెట్టేవాళ్ళకి
-ఒక special place ఉంటుంది మామా.`,
+    body: `Friday nadu meeting pettevallaki
+oka special place untundi mama.`,
     emoji: '😄',
   },
   {
-    body: `Laptop మూసేసి బయటకు వెళ్ళు మామా.
-Sun అనే ఒక పెద్ద monitor ఉంది — ఒకసారి చూడు.`,
+    body: `Laptop musesi bayataku vellu mama.
+Sun ane oka pedda monitor undi — okasari chudu.`,
     emoji: '🌞',
   },
   {
-    body: `Weekend లో కూడా Slack చూస్తే
-అసలు weekend ఎక్కడ మామా?`,
+    body: `Weekend lo kuda Slack chuste
+asalu weekend ekkada mama?`,
   },
   {
-    body: `ఈవారం ఒక్క పని బాగా చేసినా చాలు మామా.
-ఆ satisfaction తో ఇంటికి వెళ్ళు.`,
+    body: `ivaram okka pani baga chesina chalu mama.
+a satisfaction to intiki vellu.`,
   },
   {
-    body: `Friday 5 PM కి deploy చేస్తే
-Friday 7 PM కి rollback చేస్తావు మామా.`,
+    body: `Friday 5 PM ki deploy cheste
+Friday 7 PM ki rollback chestavu mama.`,
     emoji: '💀',
   },
   {
-    body: `సోమవారం నువ్వు మళ్ళీ వస్తావు మామా.
-అప్పటివరకు ఈ project నీ గురించే ఆలోచిస్తూ ఉంటుంది.`,
+    body: `somavaram nuvvu malli vastavu mama.
+appativaraku i project ni gurinche alochistu untundi.`,
   },
   {
-    body: `వారమంతా పరిగెత్తావు మామా.
-ఇప్పుడు కొంచెం నెమ్మదిగా నడువు.`,
+    body: `varamanta parigettavu mama.
+ippudu konchem nemmadiga naduvu.`,
   },
 ];

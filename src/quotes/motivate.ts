@@ -3,103 +3,103 @@ import type { Message } from './types.js';
 /** Persistence, discipline, failure, consistency - `mama motivate`. */
 export const motivate: readonly Message[] = [
   {
-    body: `నీకు నువ్వు నమ్మకం పెట్టుకున్న రోజు
-నీ జీవితంలో అసలు turning point మొదలవుతుంది మామా.`,
-    footer: 'లేచి పని మొదలుపెట్టు రా. 💪',
+    body: `niku nuvvu nammakam pettukunna roju
+ni jivitamlo asalu turning point modalavutundi mama.`,
+    footer: 'lechi pani modalupettu ra. 💪',
   },
   {
-    body: `Motivation రోజూ రాదు మామా.
-కానీ discipline రోజూ వస్తుంది.
-దాన్నే నమ్ముకో.`,
+    body: `Motivation roju radu mama.
+kani discipline roju vastundi.
+danne nammuko.`,
   },
   {
-    body: `మొదలుపెట్టడమే కష్టం మామా.
-మొదటి పది నిమిషాలు దాటితే
-మిగతాది దానికదే జరుగుతుంది.`,
+    body: `modalupettadame kashtam mama.
+modati padi nimishalu datite
+migatadi danikade jarugutundi.`,
     emoji: '🚀',
   },
   {
-    body: `Fail అయ్యావా మామా?
-సంతోషించు — ఇప్పుడు ఏది పని చేయదో నీకు తెలుసు.`,
+    body: `Fail ayyava mama?
+santoshinchu — ippudu edi pani cheyado niku telusu.`,
   },
   {
-    body: `రోజుకి ఒక్క శాతం better అయితే
-సంవత్సరం తర్వాత నిన్ను నువ్వే గుర్తుపట్టలేవు మామా.`,
+    body: `rojuki okka shatam better ayite
+samvatsaram tarvata ninnu nuvve gurtupattalevu mama.`,
     emoji: '📈',
   },
   {
-    body: `ఎవరో వచ్చి నిన్ను గెలిపించరు మామా.
-ఆ ఎవరో నువ్వే.`,
+    body: `evaro vachchi ninnu gelipincharu mama.
+a evaro nuvve.`,
   },
   {
-    body: `పెద్ద కల కనడం తప్పు కాదు మామా.
-చిన్న అడుగు వేయకపోవడమే తప్పు.`,
+    body: `pedda kala kanadam tappu kadu mama.
+chinna adugu veyakapovadame tappu.`,
   },
   {
-    body: `నీకు time లేదని కాదు మామా —
-అది నీ list లో పైన లేదని.`,
+    body: `niku time ledani kadu mama —
+adi ni list lo paina ledani.`,
   },
   {
-    body: `ఓపిక అంటే ఏమీ చేయకుండా కూర్చోవడం కాదు మామా.
-ఫలితం కనిపించకపోయినా పని ఆపకపోవడం.`,
+    body: `opika ante emi cheyakunda kurchovadam kadu mama.
+phalitam kanipinchakapoyina pani apakapovadam.`,
   },
   {
-    body: `ఈరోజు వదిలేస్తే రేపు ఇంకా కష్టమవుతుంది మామా.
-ఇవాళే ఒక్క అడుగు వెయ్యి.`,
+    body: `iroju vadileste repu inka kashtamavutundi mama.
+ivale okka adugu veyyi.`,
   },
   {
-    body: `నీ కంటే తెలివైనవాళ్ళు ఉండొచ్చు మామా.
-కానీ నీ కంటే ఎక్కువ పట్టుదల ఉన్నవాళ్ళు ఉండకూడదు.`,
+    body: `ni kante telivainavallu undochchu mama.
+kani ni kante ekkuva pattudala unnavallu undakudadu.`,
     emoji: '🔥',
   },
   {
-    body: `అందరూ 'కుదరదు' అన్నప్పుడే
-నువ్వు మొదలుపెట్టాలి మామా.`,
+    body: `andaru 'kudaradu' annappude
+nuvvu modalupettali mama.`,
   },
   {
-    body: `Result గురించి ఆలోచించకు మామా.
-రోజూ చేసే పని మీద ఆలోచించు.
-Result దానికదే వస్తుంది.`,
+    body: `Result gurinchi alochinchaku mama.
+roju chese pani mida alochinchu.
+Result danikade vastundi.`,
   },
   {
-    body: `నీ కల నీకు కొంచెం భయం పుట్టించకపోతే
-అది చాలా చిన్నది మామా.`,
+    body: `ni kala niku konchem bhayam puttinchakapote
+adi chala chinnadi mama.`,
     emoji: '🔥',
   },
   {
-    body: `అలసట వేరు, ఓటమి వేరు మామా.
-అలసిపోతే rest తీసుకో — ఆగిపోకు.`,
+    body: `alasata veru, otami veru mama.
+alasipote rest tisuko — agipoku.`,
   },
   {
-    body: `నీ దగ్గర ఉన్నదాంతోనే మొదలుపెట్టు మామా.
-Perfect setup కోసం waiting చేస్తే
-జీవితమే అయిపోతుంది.`,
+    body: `ni daggara unnadantone modalupettu mama.
+Perfect setup kosam waiting cheste
+jivitame ayipotundi.`,
   },
   {
-    body: `ఎవరైనా నిన్ను తక్కువ అంచనా వేస్తే
-అది నీ advantage మామా.
-నిశ్శబ్దంగా పని చేసుకో.`,
+    body: `evaraina ninnu takkuva anchana veste
+adi ni advantage mama.
+nishshabdanga pani chesuko.`,
     emoji: '😌',
   },
   {
-    body: `Consistency అంటే ప్రతిరోజూ 100% కాదు మామా.
-చెడ్డ రోజుల్లో కూడా 10% చేయడం.`,
+    body: `Consistency ante pratiroju 100% kadu mama.
+chedda rojullo kuda 10% cheyadam.`,
   },
   {
-    body: `నువ్వు ఎన్నిసార్లు పడ్డావో ఎవరూ లెక్కపెట్టరు మామా.
-చివరికి లేచి నిలబడ్డావా లేదా — అదే చూస్తారు.`,
+    body: `nuvvu ennisarlu paddavo evaru lekkapettaru mama.
+chivariki lechi nilabaddava leda — ade chustaru.`,
   },
   {
-    body: `భయం పోదు మామా.
-భయంతో పాటే ముందుకు నడవడం నేర్చుకో.`,
+    body: `bhayam podu mama.
+bhayanto pate munduku nadavadam nerchuko.`,
   },
   {
-    body: `నీ పోటీ నిన్నటి నువ్వే మామా.
-మిగతావాళ్ళను వదిలెయ్.`,
+    body: `ni poti ninnati nuvve mama.
+migatavallanu vadiley.`,
   },
   {
-    body: `ఇప్పుడు కష్టపడు మామా.
-తర్వాత ఎవరికీ explain చేయాల్సిన అవసరం ఉండదు.`,
-    footer: 'లేచి పని మొదలుపెట్టు రా. 💪',
+    body: `ippudu kashtapadu mama.
+tarvata evariki explain cheyalsina avasaram undadu.`,
+    footer: 'lechi pani modalupettu ra. 💪',
   },
 ];

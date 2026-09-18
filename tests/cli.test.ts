@@ -5,14 +5,13 @@ import { COMMANDS, DEFAULT_CATEGORY, pickMessage } from '../src/commands.js';
 import { VERSION } from '../src/generated/version.js';
 import { QUOTES, STYLES } from '../src/quotes/index.js';
 import { run } from '../src/run.js';
-import { transliterate } from '../src/utils/transliterate.js';
 
 describe('command routing', () => {
   it('returns general wisdom when run with no arguments', () => {
     const result = run([]);
     assert.equal(result.exitCode, 0);
     assert.equal(result.stderr, '');
-    assert.ok(result.stdout.startsWith(transliterate(STYLES[DEFAULT_CATEGORY].heading)));
+    assert.ok(result.stdout.startsWith(STYLES[DEFAULT_CATEGORY].heading));
   });
 
   for (const command of COMMANDS) {
@@ -22,7 +21,7 @@ describe('command routing', () => {
       assert.equal(result.stderr, '');
       assert.ok(result.stdout.length > 0);
       assert.ok(
-        result.stdout.startsWith(transliterate(STYLES[command.category].heading)),
+        result.stdout.startsWith(STYLES[command.category].heading),
         `expected heading for category ${command.category}`,
       );
     });
@@ -159,65 +158,31 @@ describe('program name', () => {
 describe('script', () => {
   const TELUGU = /[\u0C00-\u0C7F]/;
 
-  it('speaks Latin by default, because most terminals cannot shape Telugu', () => {
-    for (const argv of [[], ['roast'], ['--help'], ['coffee']]) {
-      assert.doesNotMatch(run(argv).stdout, TELUGU, `Telugu leaked into: ${argv}`);
+  // MAMA is written in romanised Telugu. Terminals cannot shape Telugu
+  // script - conjuncts and vowel marks land wrong even with the fonts
+  // installed - so there is no Telugu anywhere, not even in the data.
+  it('never emits a Telugu character', () => {
+    for (const argv of [[], ['roast'], ['--help'], ['coffee'], ['--version']]) {
+      assert.doesNotMatch(run(argv).stdout, TELUGU, `Telugu in: ${argv}`);
     }
     assert.doesNotMatch(run(['bogus']).stderr, TELUGU);
   });
 
-  it('speaks Telugu with --telugu', () => {
-    assert.match(run(['--telugu']).stdout, TELUGU);
-    assert.match(run(['motivate', '--telugu']).stdout, TELUGU);
-  });
-
-  it('accepts the flag before or after the command', () => {
-    assert.match(run(['--telugu', 'night']).stdout, TELUGU);
-    assert.match(run(['night', '--telugu']).stdout, TELUGU);
-  });
-
-  it('lets --roman override a Telugu default', () => {
-    assert.doesNotMatch(run(['night', '--roman'], 'mama', 'telugu').stdout, TELUGU);
-  });
-
-  it('does not treat a script flag as an unknown command', () => {
-    assert.equal(run(['--telugu']).exitCode, 0);
-    assert.equal(run(['roast', '--roman']).exitCode, 0);
-  });
-
-  it('transliterates the heading and sign-off, not just the quote', () => {
-    const out = run(['morning']).stdout;
-    assert.ok(out.startsWith('shubhodayam mama'), out.split('\n')[0]);
-  });
-
-  it('leaves Latin, punctuation and emoji untouched', () => {
-    assert.equal(transliterate('git commit -m "mama said so" 😂'), 'git commit -m "mama said so" 😂');
-  });
-
-  it('transliterates known words the way a Telugu speaker would type them', () => {
-    const cases: [string, string][] = [
-      ['మామా', 'mama'],
-      ['బాగా', 'baga'],
-      ['చేయడం', 'cheyadam'],
-      ['కంటే', 'kante'],
-      ['జీవితంలో', 'jivitamlo'],
-      ['సంతోషించు', 'santoshinchu'],
-      ['ధైర్యంగా', 'dhairyanga'],
-      ['ఒక్కటి', 'okkati'],
-      ['శుభరాత్రి', 'shubharatri'],
-    ];
-    for (const [telugu, roman] of cases) {
-      assert.equal(transliterate(telugu), roman, `${telugu} should be "${roman}"`);
-    }
-  });
-
-  it('never leaves a Telugu character behind in any shipped message', () => {
+  it('has no Telugu in any shipped message, heading or sign-off', () => {
     for (const category of Object.keys(QUOTES) as (keyof typeof QUOTES)[]) {
       for (const message of QUOTES[category]) {
         const body = typeof message.body === 'function' ? message.body() : message.body;
-        assert.doesNotMatch(transliterate(body), TELUGU, `untransliterated in ${category}`);
+        assert.doesNotMatch(body, TELUGU, `Telugu in a ${category} message`);
+        assert.doesNotMatch(message.footer ?? '', TELUGU, `Telugu in a ${category} footer`);
       }
+      assert.doesNotMatch(STYLES[category].heading, TELUGU);
+      assert.doesNotMatch(STYLES[category].footer ?? '', TELUGU);
     }
+  });
+
+  it('still says mama', () => {
+    // The whole point of the thing.
+    assert.match(run([]).stdout, /mama/);
   });
 });
 
@@ -233,15 +198,12 @@ describe('terminal output', () => {
   it('keeps lines narrow enough for an 80-column terminal', () => {
     for (const command of [...COMMANDS.map((c) => c.name), '']) {
       for (let i = 0; i < 40; i += 1) {
-        for (const script of ['roman', 'telugu'] as const) {
-          const argv = command === '' ? [] : [command];
-          const output = run(argv, 'mama', script).stdout;
-          for (const line of output.split('\n')) {
-            assert.ok(
-              [...line].length <= 76,
-              `line too long in ${script} "mama ${command}": ${line}`,
-            );
-          }
+        const output = run(command === '' ? [] : [command]).stdout;
+        for (const line of output.split('\n')) {
+          assert.ok(
+            [...line].length <= 76,
+            `line too long in "mama ${command}": ${line}`,
+          );
         }
       }
     }

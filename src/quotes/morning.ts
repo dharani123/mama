@@ -3,75 +3,75 @@ import type { Message } from './types.js';
 /** Start-of-day nudges - `mama morning`. */
 export const morning: readonly Message[] = [
   {
-    body: `ఈరోజు perfect గా ఉండాల్సిన అవసరం లేదు.
-నిన్నటి కంటే ఒక్క అడుగు ముందుంటే చాలు.`,
-    footer: 'Have a great day మామా! 💪',
+    body: `iroju perfect ga undalsina avasaram ledu.
+ninnati kante okka adugu mundunte chalu.`,
+    footer: 'Have a great day mama! 💪',
   },
   {
-    body: `లేచావా మామా?
-అదే ఈరోజు మొదటి win.`,
+    body: `lechava mama?
+ade iroju modati win.`,
     emoji: '✅',
   },
   {
-    body: `ఈరోజు చేయాల్సిన ఒక్క పని రాసుకో మామా.
-మిగతాదంతా bonus.`,
+    body: `iroju cheyalsina okka pani rasuko mama.
+migatadanta bonus.`,
   },
   {
-    body: `Coffee తాగు, ఒక deep breath తీసుకో,
-తర్వాత ప్రపంచాన్ని ఎదుర్కో మామా.`,
+    body: `Coffee tagu, oka deep breath tisuko,
+tarvata prapanchanni edurko mama.`,
     emoji: '☕',
   },
   {
-    body: `నిన్నటి చెత్త రోజు ఇవాళ్టికి వర్తించదు మామా.
-ఇది కొత్త రోజు.`,
+    body: `ninnati chetta roju ivaltiki vartinchadu mama.
+idi kotta roju.`,
   },
   {
-    body: `ఉదయం మొదటి గంట నీది మామా.
-దాన్ని phone కి ఇవ్వకు.`,
+    body: `udayam modati ganta nidi mama.
+danni phone ki ivvaku.`,
     emoji: '📵',
   },
   {
-    body: `ఈరోజు ఎవరో ఒకరికి ఒక మంచి మాట చెప్పు మామా.
-అది నీ రోజునే బాగుచేస్తుంది.`,
+    body: `iroju evaro okariki oka manchi mata cheppu mama.
+adi ni rojune baguchestundi.`,
   },
   {
-    body: `పెద్ద goal ని ఈరోజు వరకే కుదించు మామా.
-ఈరోజు ఏం చేయగలవో అదే చెయ్యి.`,
+    body: `pedda goal ni iroju varake kudinchu mama.
+iroju em cheyagalavo ade cheyyi.`,
   },
   {
-    body: `సూర్యుడు రోజూ లేస్తాడు మామా.
-ఎవరూ చప్పట్లు కొట్టకపోయినా.
-నువ్వూ అంతే.`,
+    body: `suryudu roju lestadu mama.
+evaru chappatlu kottakapoyina.
+nuvvu ante.`,
   },
   {
-    body: `Todo list చిన్నగా ఉంచు మామా.
-పూర్తి చేయగలిగినంతే రాయి.`,
+    body: `Todo list chinnaga unchu mama.
+purti cheyagaliginante rayi.`,
   },
   {
-    body: `ఉదయం చేసే మొదటి పని
-రోజంతటినీ decide చేస్తుంది మామా.`,
+    body: `udayam chese modati pani
+rojantatini decide chestundi mama.`,
   },
   {
-    body: `ఈరోజు నీకు ఒక అవకాశం ఇచ్చారు మామా.
-వృథా చేయకు.`,
+    body: `iroju niku oka avakasham ichcharu mama.
+vrutha cheyaku.`,
     emoji: '🌅',
   },
   {
-    body: `అలారం ఐదుసార్లు snooze చేశావా మామా?
-పర్లేదు — ఇప్పుడు లేచావుగా.`,
+    body: `alaram aidusarlu snooze cheshava mama?
+parledu — ippudu lechavuga.`,
     emoji: '😄',
   },
   {
-    body: `ఈరోజు కష్టమైన పని ముందు చెయ్యి మామా.
-మిగతా రోజంతా తేలికగా ఉంటుంది.`,
+    body: `iroju kashtamaina pani mundu cheyyi mama.
+migata rojanta telikaga untundi.`,
   },
   {
-    body: `నీ రోజు ఎలా ఉండాలో నువ్వే రాసుకో మామా.
-లేకపోతే ఎవరో ఒకరు రాసేస్తారు.`,
+    body: `ni roju ela undalo nuvve rasuko mama.
+lekapote evaro okaru rasestaru.`,
   },
   {
-    body: `నీళ్ళు తాగావా మామా?
-Code తర్వాత. ముందు నీళ్ళు.`,
+    body: `nillu tagava mama?
+Code tarvata. mundu nillu.`,
     emoji: '💧',
   },
 ];

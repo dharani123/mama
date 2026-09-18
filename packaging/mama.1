@@ -1,4 +1,4 @@
-.TH MAMA 1 "2026-09-18" "mama 1.1.0" "User Commands"
+.TH MAMA 1 "2026-09-18" "mama 2.0.0" "User Commands"
 .SH NAME
 mama \- your Telugu-speaking terminal buddy
 .SH SYNOPSIS
@@ -61,15 +61,6 @@ Coffee wisdom.
 Weekend mode. Works on any day of the week, deliberately.
 .SH OPTIONS
 .TP
-.B \-\-telugu
-Print messages in Telugu script. Requires a terminal that can shape complex
-text and a font with Telugu glyphs; many terminals cannot, which is why this
-is not the default.
-.TP
-.B \-\-roman
-Print messages in Latin script. This is the default, and overrides
-.BR MAMA_TELUGU .
-.TP
 .BR \-h ", " \-\-help
 Show usage and exit.
 .TP
@@ -84,21 +75,6 @@ A message was printed.
 The command was not recognised, or an unexpected error occurred.
 .SH ENVIRONMENT
 .TP
-.B MAMA_TELUGU
-If set, use Telugu script by default, as though
-.B \-\-telugu
-were given every time.
-.TP
-.B NO_COLOR
-If set, disable colour entirely. See
-.UR https://no-color.org
-.UE .
-.TP
-.B FORCE_COLOR
-If set to anything other than
-.BR 0 ,
-keep colour even when output is not a terminal.
-.TP
 .B MAMA_SEED
 An integer seed for message selection. The same seed always produces the
 same message, which is useful in tests and scripts.
@@ -107,24 +83,11 @@ same message, which is useful in tests and scripts.
 If set, print real stack traces instead of a friendly apology.
 .SH NOTES
 .B mama
-prints romanised Telugu by default - "parledu mama" rather than Telugu script
-\- because a terminal grid cannot do the complex-text layout Telugu needs, so
-conjuncts and vowel marks come out wrong even when Telugu fonts are present.
-A UTF-8 locale is still needed for the emoji.
+speaks Telugu written in Latin letters - "parledu mama" - rather than Telugu
+script, because a terminal grid cannot do the complex-text layout Telugu
+script needs. There is no font to install and nothing to configure; a UTF-8
+locale is still wanted for the emoji.
 .PP
-If your terminal does render Telugu correctly, use
-.B \-\-telugu
-or set
-.BR MAMA_TELUGU .
-On Debian and Ubuntu the
-.B fonts\-telugu
-package provides a suitable font.
-.PP
-Colour is disabled automatically when standard output is not a terminal, so
-.RB \(lq "mama | cat" \(rq
-and
-.RB \(lq "mama > file" \(rq
-produce plain text.
 .SH EXAMPLES
 .TP
 .B mama

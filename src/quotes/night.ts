@@ -3,75 +3,75 @@ import type { Message } from './types.js';
 /** Winding down - `mama night`. */
 export const night: readonly Message[] = [
   {
-    body: `ఈరోజు అనుకున్నంత చేయలేకపోయావా?
-పర్లేదు మామా.
+    body: `iroju anukunnanta cheyalekapoyava?
+parledu mama.
 
-రేపు ఇంకో రోజు ఉంది.
-ఇప్పుడు ప్రశాంతంగా నిద్రపో.`,
-    footer: 'శుభరాత్రి ❤️',
+repu inko roju undi.
+ippudu prashantanga nidrapo.`,
+    footer: 'shubharatri ❤️',
   },
   {
-    body: `Laptop మూసెయ్ మామా.
-ఆ bug రేపు కూడా అక్కడే ఉంటుంది.`,
+    body: `Laptop musey mama.
+a bug repu kuda akkade untundi.`,
   },
   {
-    body: `ఈరోజు నువ్వు చేసిన ఒక్క మంచి పని గుర్తుచేసుకో మామా.
-అది చాలు.`,
+    body: `iroju nuvvu chesina okka manchi pani gurtuchesuko mama.
+adi chalu.`,
   },
   {
-    body: `రేపటి tension ని ఇవాళ రాత్రి మోయకు మామా.`,
+    body: `repati tension ni ivala ratri moyaku mama.`,
   },
   {
-    body: `నిద్ర కూడా productivity లో భాగమే మామా.
-ఎవరూ చెప్పరు, కానీ నిజం.`,
+    body: `nidra kuda productivity lo bhagame mama.
+evaru chepparu, kani nijam.`,
     emoji: '😴',
   },
   {
-    body: `ఈరోజు fail అయ్యావా?
-పడుకో మామా.
-రేపు మళ్ళీ try చేద్దాం.`,
+    body: `iroju fail ayyava?
+paduko mama.
+repu malli try cheddam.`,
   },
   {
-    body: `Phone ని పక్కన పెట్టు మామా.
-ఆ scroll ఎప్పటికీ అయిపోదు.`,
+    body: `Phone ni pakkana pettu mama.
+a scroll eppatiki ayipodu.`,
     emoji: '📱',
   },
   {
-    body: `రోజంతా అందరి కోసం పని చేశావు మామా.
-ఇప్పుడు కొంచెం నీ కోసం.`,
+    body: `rojanta andari kosam pani cheshavu mama.
+ippudu konchem ni kosam.`,
   },
   {
-    body: `చీకటి పడింది అంటే రోజు ముగిసిందని మామా.
-లెక్కలు రేపు చూద్దాం.`,
+    body: `chikati padindi ante roju mugisindani mama.
+lekkalu repu chuddam.`,
   },
   {
-    body: `ఈరోజు కృతజ్ఞత చెప్పాల్సిన ఒక్క విషయం ఆలోచించు మామా.
-ఆ ఆలోచనతోనే నిద్రపో.`,
+    body: `iroju krutajnyata cheppalsina okka vishayam alochinchu mama.
+a alochanatone nidrapo.`,
     emoji: '🙏',
   },
   {
-    body: `అర్ధరాత్రి వరకు code చేస్తే hero కాదు మామా.
-రేపు అలసిపోయిన developer అవుతావు.`,
+    body: `ardharatri varaku code cheste hero kadu mama.
+repu alasipoyina developer avutavu.`,
   },
   {
-    body: `ఈరోజు గడిచిపోయింది మామా.
-మంచైనా చెడైనా — గడిచిపోయింది.`,
+    body: `iroju gadichipoyindi mama.
+manchaina chedaina — gadichipoyindi.`,
   },
   {
-    body: `ఇంకా ఒక్క commit అనుకుంటున్నావా మామా?
-అదే మాట గంట క్రితం కూడా అన్నావు.`,
+    body: `inka okka commit anukuntunnava mama?
+ade mata ganta kritam kuda annavu.`,
     emoji: '😄',
   },
   {
-    body: `కల కనాలంటే ముందు నిద్రపోవాలి మామా.`,
+    body: `kala kanalante mundu nidrapovali mama.`,
     emoji: '😌',
   },
   {
-    body: `నీ శరీరం ఈరోజంతా నిన్ను మోసింది మామా.
-దానికి కూడా కొంచెం rest ఇవ్వు.`,
+    body: `ni shariram irojanta ninnu mosindi mama.
+daniki kuda konchem rest ivvu.`,
   },
   {
-    body: `రేపు ఏం చేయాలో ఒక్క line రాసిపెట్టు మామా.
-తర్వాత ప్రశాంతంగా పడుకో.`,
+    body: `repu em cheyalo okka line rasipettu mama.
+tarvata prashantanga paduko.`,
   },
 ];

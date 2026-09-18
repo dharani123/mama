@@ -8,82 +8,82 @@ import type { Message } from './types.js';
  */
 export const git: readonly Message[] = [
   {
-    body: `Commit చేయకుండా code మార్చుకుంటూ పోతే
-ఒకరోజు నువ్వే ఏం చేశావో మర్చిపోతావు మామా. 😂`,
+    body: `Commit cheyakunda code marchukuntu pote
+okaroju nuvve em cheshavo marchipotavu mama. 😂`,
     footer: 'git commit -m "mama said so"',
   },
   {
-    body: `git push --force ని main మీద వేసే ముందు
-ఒకసారి team వైపు చూడు మామా.
-వాళ్ళ ముఖాలే చెప్తాయి.`,
+    body: `git push --force ni main mida vese mundu
+okasari team vaipu chudu mama.
+valla mukhale cheptayi.`,
     emoji: '😨',
   },
   {
-    body: `Merge conflict వచ్చిందా మామా?
-భయపడకు.
-Git నిన్ను నమ్మి decision నీకు వదిలేసింది.`,
+    body: `Merge conflict vachchinda mama?
+bhayapadaku.
+Git ninnu nammi decision niku vadilesindi.`,
   },
   {
-    body: `Commit message 'fix' అని రాస్తే
-ఆరు నెలల తర్వాత నీకే అర్థం కాదు మామా.`,
+    body: `Commit message 'fix' ani raste
+aru nelala tarvata nike artham kadu mama.`,
   },
   {
-    body: `Branch పేరు 'test2-final-new' అయితే
-నీ project కూడా అలాగే ఉంటుంది మామా.`,
+    body: `Branch peru 'test2-final-new' ayite
+ni project kuda alage untundi mama.`,
     emoji: '😄',
   },
   {
-    body: `git pull చేయకుండా పని మొదలుపెట్టావా మామా?
-సాయంత్రం conflict దగ్గర కలుద్దాం.`,
+    body: `git pull cheyakunda pani modalupettava mama?
+sayantram conflict daggara kaluddam.`,
   },
   {
-    body: `Rebase అర్థమైందా మామా?
+    body: `Rebase arthamainda mama?
 
-లేక భయపడటం మానేశావా?
-రెండూ ఒకటి కాదు.`,
+leka bhayapadatam maneshava?
+rendu okati kadu.`,
   },
   {
-    body: `Stash లో పెట్టిన code ని మర్చిపోకు మామా.
-అది అక్కడే ఓపిగ్గా ఎదురుచూస్తూ ఉంటుంది.`,
+    body: `Stash lo pettina code ni marchipoku mama.
+adi akkade opigga eduruchustu untundi.`,
   },
   {
-    body: `చిన్న చిన్న commit లు చెయ్యి మామా.
-పెద్ద commit ని review చేయడం ఎవరికీ ఇష్టం ఉండదు.`,
+    body: `chinna chinna commit lu cheyyi mama.
+pedda commit ni review cheyadam evariki ishtam undadu.`,
   },
   {
-    body: `git reset --hard వేసే ముందు
-ఒక్క క్షణం ఆగు మామా.
-అది వెనక్కి రాదు.`,
+    body: `git reset --hard vese mundu
+okka kshanam agu mama.
+adi venakki radu.`,
     emoji: '💀',
   },
   {
-    body: `PR లో 400 files ఉంటే
-ఎవరూ review చేయరు మామా.
-'LGTM' అని రాసేస్తారు.`,
+    body: `PR lo 400 files unte
+evaru review cheyaru mama.
+'LGTM' ani rasestaru.`,
     emoji: '😂',
   },
   {
-    body: `Git history అంటే నీ project కథ మామా.
-శుభ్రంగా రాయి.`,
+    body: `Git history ante ni project katha mama.
+shubhranga rayi.`,
   },
   {
-    body: `main branch లోకి నేరుగా commit చేస్తున్నావా మామా?
-ధైర్యవంతుడివి.`,
+    body: `main branch loki neruga commit chestunnava mama?
+dhairyavantudivi.`,
     emoji: '💀',
   },
   {
-    body: `Git లో ఏదైనా తప్పు చేశావా మామా?
-భయపడకు — reflog ఉంది.
-Git నీ కంటే ఎక్కువ గుర్తుపెట్టుకుంటుంది.`,
+    body: `Git lo edaina tappu cheshava mama?
+bhayapadaku — reflog undi.
+Git ni kante ekkuva gurtupettukuntundi.`,
     emoji: '🙏',
   },
   {
-    body: `Conflict resolve చేసేటప్పుడు రెండు వైపులా చదువు మామా.
-'accept theirs' ఎప్పుడూ సులభమైన దారి కాదు.`,
+    body: `Conflict resolve chesetappudu rendu vaipula chaduvu mama.
+'accept theirs' eppudu sulabhamaina dari kadu.`,
   },
   {
-    body: `'ఈ branch ఎందుకు ఉంది?' అని అడిగితే
-ఎవరికీ తెలియదు మామా.
-అయినా ఎవరూ delete చేయరు.`,
+    body: `'i branch enduku undi?' ani adigite
+evariki teliyadu mama.
+ayina evaru delete cheyaru.`,
   },
 ];

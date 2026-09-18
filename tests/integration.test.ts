@@ -25,16 +25,10 @@ describe('the real binary', () => {
     const result = mama([]);
     assert.equal(result.status, 0);
     assert.match(result.stdout, /mama/);
-    // Latin by default, so the output is readable in any terminal.
+    // Romanised throughout, so it is readable in any terminal.
     assert.doesNotMatch(result.stdout, /[\u0C00-\u0C7F]/);
   });
 
-  it('prints Telugu with --telugu, and with MAMA_TELUGU set', () => {
-    assert.match(mama(['--telugu']).stdout, /[\u0C00-\u0C7F]/);
-    assert.match(mama([], { MAMA_TELUGU: '1' }).stdout, /[\u0C00-\u0C7F]/);
-    // The flag still wins over the environment.
-    assert.doesNotMatch(mama(['--roman'], { MAMA_TELUGU: '1' }).stdout, /[\u0C00-\u0C7F]/);
-  });
 
   for (const command of COMMANDS) {
     it(`exits 0 for \`mama ${command.name}\``, () => {
