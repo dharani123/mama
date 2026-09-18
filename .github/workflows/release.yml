@@ -1,0 +1,121 @@
+name: Release
+
+# Publishes the signed APT repository to GitHub Pages and attaches the .deb
+# to the GitHub Release.
+#
+# Requires one repository secret:
+#   GPG_PRIVATE_KEY   ASCII-armoured private signing key
+#   GPG_PASSPHRASE    optional; only if the key has a passphrase
+#
+# And Settings > Pages > Source set to "GitHub Actions".
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write   # attach the .deb to the release
+  pages: write      # publish the repository
+  id-token: write   # required by deploy-pages
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Test before publishing anything
+        run: npm test
+
+      - name: Check the tag matches package.json
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          pkg="$(node -p "require('./package.json').version")"
+          if [ "$tag" != "$pkg" ]; then
+            echo "tag v$tag does not match package.json version $pkg" >&2
+            exit 1
+          fi
+
+      - name: Import the signing key
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+        run: |
+          if [ -z "$GPG_PRIVATE_KEY" ]; then
+            echo "GPG_PRIVATE_KEY secret is not set" >&2
+            exit 1
+          fi
+          echo "$GPG_PRIVATE_KEY" | gpg --batch --import
+          gpg --list-secret-keys --keyid-format=long
+
+      - name: Allow unattended signing
+        run: |
+          # gpg needs a loopback pinentry to sign without a terminal.
+          mkdir -p ~/.gnupg
+          {
+            echo "allow-loopback-pinentry"
+            echo "pinentry-mode loopback"
+          } >> ~/.gnupg/gpg-agent.conf
+          echo "use-agent" >> ~/.gnupg/gpg.conf
+          gpgconf --reload gpg-agent
+
+      - name: Point the repository at this GitHub account
+        run: |
+          # repo.env ships with placeholders; the real values come from the
+          # repository this workflow is running in.
+          sed -i \
+            -e "s|^REPO_OWNER=.*|REPO_OWNER=\"${GITHUB_REPOSITORY_OWNER}\"|" \
+            -e "s|^REPO_NAME=.*|REPO_NAME=\"${GITHUB_REPOSITORY#*/}\"|" \
+            packaging/repo.env
+          cat packaging/repo.env | grep -E '^REPO_(OWNER|NAME)='
+
+      - name: Build the signed APT repository
+        env:
+          # build-apt-repo.sh reads this and switches gpg to loopback pinentry.
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+        run: ./packaging/build-apt-repo.sh
+
+      - name: Verify apt accepts the repository it just built
+        run: |
+          repo="$PWD/build/apt-repo"
+          sudo install -d -m 0755 /etc/apt/keyrings
+          sudo gpg --dearmor < "$repo/mama.asc" \
+            > /tmp/mama.gpg && sudo mv /tmp/mama.gpg /etc/apt/keyrings/mama.gpg
+          echo "deb [signed-by=/etc/apt/keyrings/mama.gpg] file://$repo stable main" \
+            | sudo tee /etc/apt/sources.list.d/mama-local.list
+          sudo apt-get update
+          sudo apt-get install -y mama
+          mama --version
+          mama roast
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/apt-repo
+
+      - name: Attach the .deb to the GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "$GITHUB_REF_NAME" build/mama_*_all.deb --clobber
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # 18 is the minimum the package claims to support, so it must be
+        # tested; 20 and 22 catch anything that breaks on newer runtimes.
+        node: ['18', '20', '22']
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+
+      - run: npm ci
+      - run: npm test
+
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build the .deb
+        run: ./packaging/build-deb.sh
+
+      - name: Verify the package installs and runs
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ./build/mama_*_all.deb
+          mama --version
+          mama code
+          man mama | head -5
+          # An unknown command must still exit non-zero once installed.
+          if mama definitely-not-a-command; then
+            echo "expected a non-zero exit for an unknown command" >&2
+            exit 1
+          fi
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mama-deb
+          path: build/*.deb

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAMA CLI — APT repository</title>
+<meta name="description" content="Install mama, your Telugu-speaking terminal buddy, with apt.">
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #23201c;
+    --muted: #6b645c;
+    --rule: #e3ded7;
+    --code-bg: #f3f0ec;
+    --accent: #0e7490;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #171614;
+      --fg: #eceae6;
+      --muted: #a09991;
+      --rule: #302d29;
+      --code-bg: #211f1c;
+      --accent: #67c5d8;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; padding: 4rem 16px 6rem; }
+  h1 { font-size: 2rem; margin: 0 0 .25rem; letter-spacing: -.02em; }
+  .tagline { color: var(--muted); margin: 0 0 2.5rem; font-size: 1.05rem; }
+  h2 {
+    font-size: .8rem; text-transform: uppercase; letter-spacing: .09em;
+    color: var(--muted); margin: 2.75rem 0 .75rem; font-weight: 600;
+  }
+  pre {
+    background: var(--code-bg); border: 1px solid var(--rule); border-radius: 8px;
+    padding: 1rem 1.1rem; overflow-x: auto; margin: 0 0 1rem;
+    font: 13px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  p code { background: var(--code-bg); padding: .1em .35em; border-radius: 4px; font-size: .9em; }
+  .sample {
+    background: var(--code-bg); border: 1px solid var(--rule); border-radius: 8px;
+    padding: 1.25rem; white-space: pre-wrap; margin: 0 0 1rem;
+    font: 14px/1.7 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .875rem;
+  }
+  ul { padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>MAMA CLI</h1>
+  <p class="tagline">నీ టెర్మినల్ మామా — your Telugu-speaking terminal buddy.</p>
+
+  <div class="sample">$ mama
+
+మామా ❤️
+
+"నెమ్మదిగా వెళ్తున్నావని బాధపడకు మామా,
+ ఆగిపోలేదుగా... అదే ముఖ్యం."
+
+— నీ టెర్మినల్ మామా 😎</div>
+
+  <h2>Install on Debian or Ubuntu</h2>
+  <p>Add the repository once:</p>
+<pre><code>sudo install -d -m 0755 /etc/apt/keyrings
+curl -fsSL @PAGES_URL@/@KEY_FILE@ \
+  | sudo tee /etc/apt/keyrings/mama.asc &gt; /dev/null
+
+echo "deb [signed-by=/etc/apt/keyrings/mama.asc] @PAGES_URL@ @SUITE@ @COMPONENT@" \
+  | sudo tee /etc/apt/sources.list.d/mama.list &gt; /dev/null
+
+sudo apt update</code></pre>
+
+  <p>Then, now and for every future version:</p>
+<pre><code>sudo apt install mama</code></pre>
+
+  <h2>Use it</h2>
+<pre><code>mama              # random Telugu wisdom
+mama motivate     # motivation
+mama calm         # slow down
+mama morning      # start of day
+mama night        # end of day
+mama code         # developer wisdom
+mama git          # git humour
+mama roast        # roast your terminal
+mama coffee       # coffee wisdom
+mama friday       # weekend mode
+
+man mama          # the full manual</code></pre>
+
+  <h2>Requirements</h2>
+  <ul>
+    <li><strong>Node.js 18+</strong> — apt installs the <code>nodejs</code> package for you.</li>
+    <li><strong>A UTF-8 terminal with Telugu glyphs.</strong> If you see boxes
+      instead of letters, install <code>fonts-telugu</code>.</li>
+  </ul>
+
+  <h2>Without the repository</h2>
+  <p>You can also install a single <code>.deb</code> directly:</p>
+<pre><code>wget @PAGES_URL@/pool/@COMPONENT@/m/mama/mama_@VERSION@_all.deb
+sudo apt install ./mama_@VERSION@_all.deb</code></pre>
+
+  <h2>Uninstall</h2>
+<pre><code>sudo apt remove mama
+sudo rm /etc/apt/sources.list.d/mama.list /etc/apt/keyrings/mama.asc</code></pre>
+
+  <footer>
+    <p>MAMA is a humour utility. It never executes commands, modifies your
+    files or git repositories, or makes network requests — a message may
+    <em>contain</em> text like a git command, but it is only ever printed.</p>
+    <p>Source and issues:
+      <a href="https://github.com/@OWNER@/@REPO@">github.com/@OWNER@/@REPO@</a>
+      · MIT licensed</p>
+  </footer>
+</main>
+</body>
+</html>
