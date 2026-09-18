@@ -23,7 +23,7 @@
   },
   "type": "module",
   "bin": {
-    "mama": "dist/src/cli.js"
+    "dharani-mama": "dist/src/cli.js"
   },
   "files": [
     "dist/src",

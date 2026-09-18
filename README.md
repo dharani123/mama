@@ -84,9 +84,18 @@ sudo apt install ./mama_1.0.0-1_all.deb
 npm install -g dharani-mama
 ```
 
-The package is `dharani-mama` (the plain `mama` and `mama-cli` names belong to
-unrelated projects on the registry), but the command it installs is still
-`mama`.
+This installs the command as **`dharani-mama`**:
+
+```bash
+dharani-mama
+dharani-mama roast
+```
+
+The plain `mama` and `mama-cli` names both belong to unrelated projects on the
+registry, so the npm package and its command are `dharani-mama`. The Debian
+package installs the same program as `mama`. Either way the program reports
+whichever name you invoked it by, so `--help` always shows commands you can
+actually paste.
 
 ### From source
 
@@ -123,6 +132,10 @@ sudo apt install ./build/mama_1.0.0-1_all.deb
 ---
 
 ## Usage
+
+Examples below use `mama`, the name the Debian package installs. If you
+installed from npm the command is `dharani-mama` — everything else is
+identical.
 
 ```console
 $ mama motivate

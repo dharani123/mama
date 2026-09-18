@@ -110,6 +110,51 @@ describe('invalid input', () => {
   });
 });
 
+describe('program name', () => {
+  // Installed as `mama` by the Debian package and `dharani-mama` by npm, so
+  // help and error text must follow whichever name was invoked.
+  it('uses the given name throughout the help output', () => {
+    const help = run(['--help'], 'dharani-mama');
+    assert.match(help.stdout, /dharani-mama\s+Random wisdom/);
+    assert.match(help.stdout, /dharani-mama roast/);
+    assert.doesNotMatch(help.stdout, /^\s+mama\s/m);
+  });
+
+  it('uses the given name in the version line', () => {
+    assert.equal(run(['--version'], 'dharani-mama').stdout, `dharani-mama version ${VERSION}`);
+  });
+
+  it('uses the given name when suggesting --help after a bad command', () => {
+    assert.match(run(['bogus'], 'dharani-mama').stderr, /dharani-mama --help/);
+  });
+
+  it('keeps the description column aligned whatever the name is', () => {
+    // The usage column is measured from the longest invocation, so a long
+    // name like dharani-mama must not collide with its own description.
+    for (const name of ['mama', 'dharani-mama', 'a']) {
+      const descriptions: Record<string, string> = {
+        'Random wisdom': `  ${name}`,
+        Motivation: `  ${name} motivate`,
+        'Show this help': '  --help, -h',
+      };
+      const lines = run(['--help'], name).stdout.split('\n');
+      const columns = new Set<number>();
+
+      for (const [description, prefix] of Object.entries(descriptions)) {
+        const line = lines.find((l) => l.startsWith(`${prefix} `) && l.endsWith(description));
+        assert.ok(line !== undefined, `no "${description}" row for "${name}"`);
+        assert.ok(
+          line.startsWith(prefix) && line[prefix.length] === ' ',
+          `"${name}" row runs into its description: ${line}`,
+        );
+        columns.add(line.indexOf(description));
+      }
+
+      assert.equal(columns.size, 1, `columns not aligned for "${name}": ${[...columns]}`);
+    }
+  });
+});
+
 describe('terminal output', () => {
   it('emits no ANSI escapes when stdout is not a TTY', () => {
     // The test runner's stdout is a pipe, so colour must be off.
